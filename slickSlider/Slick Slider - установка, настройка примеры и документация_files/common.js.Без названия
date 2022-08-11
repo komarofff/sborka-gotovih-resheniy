@@ -1,0 +1,32 @@
+// ===== Scroll to Top ====
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {
+        $('#return-to-top').fadeIn(200);
+    } else {
+        $('#return-to-top').fadeOut(200);
+    }
+});
+$('#return-to-top').click(function() {
+    $('body,html').animate({
+        scrollTop : 0
+    }, 500);
+});
+
+// ===== lightbox ====
+/*lightbox.option({
+    'resizeDuration': 700,
+    'wrapAround': false,
+    'albumLabel': "Изображений %1 из %2",
+    'disableScrolling': true
+})*/
+
+// Функция, обновляющая капчу
+function refreshCaptcha() {
+    img = document.getElementById('imgCaptcha');
+    img.src = 'captcha.php?' + Math.random();
+    return false
+}
+
+$('#imgCaptcha').click(function(){
+   $(this).attr('src','/captcha.php?' + Math.random());
+});

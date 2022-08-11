@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+
+</head>
+<body>
+<div id="map" style="max-width: 50vw;min-height: 90vh;position: relative;overflow: hidden; margin:0 auto;"></div>
+
+<script>
+
+  function initMap() {
+
+    let div_arr = [
+      {lat: '47.7126116', lng: '-122.3009061', popup: "1111111111111111 ", title: 'Property test 2'},
+      {lat: '47.9090712', lng: '-122.223822', popup: "22222222222222222222", title: 'Property test'},
+      {lat: '59.7126116', lng: '-122.3009061', popup: "3333333333333333333333", title: 'Property test 2'},
+      {lat: '59.9090712', lng: '-122.223822', popup: "444444444444444444444", title: 'Property test'},
+      {lat: '59.7126116', lng: '-122.4', popup: "3333333333333333333333", title: 'Property test 2'},
+      {lat: '59.9090712', lng: '-122.5', popup: "444444444444444444444", title: 'Property test'},
+      {lat: '79.7126116', lng: '-126', popup: "3333333333333333333333", title: 'Property test 2'},
+      {lat: '79.9090712', lng: '-126', popup: "444444444444444444444", title: 'Property test'},
+      {lat: '79.7126116', lng: '-127', popup: "3333333333333333333333", title: 'Property test 2'},
+    ]
+
+
+
+    const labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const icon_image = 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png';//картинка иконки адреса
+    const positions = div_arr
+    let lat = parseFloat(positions[0].lat)
+    let lng = parseFloat(positions[0].lng)
+    const center = {lat: lat, lng: lng};
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 12,
+      center: center,
+      // panControl: false,
+      // zoomControl: false,
+      // scaleControl: false,
+      streetViewControl: true,
+      streetViewControlOptions: {
+        position: google.maps.ControlPosition.LEFT_CENTER,
+      }
+    });
+
+    var bounds = new google.maps.LatLngBounds();/// 1
+    var infowindow = new google.maps.InfoWindow();
+
+    const markers = positions.map((location, i) => {
+      let markerSingle = new google.maps.Marker({
+        position: new google.maps.LatLng(positions[i].lat, positions[i].lng),
+        title: positions[i].title,
+        icon: icon_image,
+        optimized: true
+      });
+
+      // infowindow = new google.maps.InfoWindow();
+      google.maps.event.addListener(markerSingle, 'click', (function (mark, i) {
+        return function () {
+          infowindow.setContent(positions[i].popup);
+          infowindow.open(map, mark);
+        }
+      })(markerSingle, i));
+
+      return markerSingle
+    });
+    for (let i = 0; i < positions.length; i++) {
+
+      //bounds.extend(marker.getPosition());/// 2
+      bounds.extend(markers[i].position)
+    }
+
+    const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+    ///// 3
+    map.fitBounds(bounds);
+  }
+
+
+</script>
+
+<script  src="https://maps.googleapis.com/maps/api/js?key=KEY&callback=initMap&v=weekly"  async></script>
+
+</body>
+</html>

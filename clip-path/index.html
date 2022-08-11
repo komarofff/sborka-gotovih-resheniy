@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=Overpass:300,400&display=swap');
+
+
+        * {
+            box-sizing: border-box;}
+        * ::before, * ::after {
+                        box-sizing: border-box;
+                    }
+        
+
+        body {
+            font-family: 'Overpass', sans-serif;
+            font-size: 1em;
+            font-weight: 300;
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh;
+            color: #2e2e2e;
+            background: #fff;
+        }
+        @media (min-width: 48rem) {
+            font-size: 1.25em;
+        }
+
+
+        #container {
+            margin: auto;
+            padding: 0 1rem;
+            max-width: 48rem;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        .link {
+            position: relative;
+            transition: clip-path 275ms ease;
+        }
+        .link:hover span::before, .link:focus span::before {
+                                   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                               }
+        span {
+            position: relative;
+            display: inline-block;
+            color: #2c2fe8;}
+
+        span::before {
+             position: absolute;
+             content: attr(data-content);
+             color: darkblue;
+             text-decoration: underline;
+             text-decoration-color: darkblue;
+             clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+             transition: clip-path 275ms ease;
+         }
+
+
+
+        span.dotted::before {
+            text-decoration-style: dotted;
+        }
+
+        span.dashed::before {
+            text-decoration-style: dashed;
+        }
+
+        span.double::before {
+            text-decoration-style: double;
+        }
+
+        span.wavy::before {
+            text-decoration-style: wavy;
+        }
+
+        span.line-through::before {
+            text-decoration-line: line-through;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <p>Latte teapot shincha blend <a class="link" href="#"><span data-content="chamomile">chamomile</span></a> yixing
+        scented shrub iced ginger. Chamomile irish breakfast fermentation london fog gaiwan <a class="link"
+                                                                                               href="#"><span
+                class="dotted" data-content="boba">boba</span></a> lapsang souchong ceylon shincha teahouse <a
+                class="link" href="#"><span class="line-through" data-content="kombucha">kombucha</span></a> camellia
+        sinensis white. Pu’erh lychee tisane ceylon infusion ginger antioxidant <a class="link" href="#"><span
+                class="dashed" data-content="jasmine">jasmine</span></a> darjeeling antioxidant zen mint. Oolong taro
+        honeydew shoumei white pearl milk boba <a class="link" href="#"><span class="double" data-content="latte">latte</a>
+        lapsang souchong white rooibos. Mug tea time english breakfast kukicha boba tisane <a class="link"
+                                                                                              href="#"><span
+                class="wavy" data-content="matcha">matcha</span></a> teacup.</p>
+</div>
+</body>
+</html>

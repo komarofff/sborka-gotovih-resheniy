@@ -1,0 +1,228 @@
+
+<!--<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>-->
+<script src="./clusters.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXfb8Zcy55Q7SdARP9TZohNVsW48v2vcI&libraries=places"></script>
+<style>
+    #map {
+        height: 100%;
+    }
+
+    /* Optional: Makes the sample page fill the window. */
+
+    html,
+    body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }</style>
+<div id="map"></div>
+<script>
+    function initMap() {
+        // map options
+        var bounds = new google.maps.LatLngBounds();/// 1
+
+        var options = {
+            zoom: 7,
+            center: {lat: 53.3938131, lng: -7.858913}
+        }
+        var map = new google.maps.Map(document.getElementById('map'), options);
+        // Add a marker clusterer to manage the markers.
+
+        //Add marker
+        let iconImage = 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png'
+        const markers = [
+            {
+                coords: {lat: -53.338741, lng: -6.261563},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>St Stephen’s Green</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://ststephensgreenpark.ie/</a>'
+            },
+            //Dublin
+            {
+                coords: {lat: 53.338741, lng: -6.261563},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>St Stephen’s Green</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://ststephensgreenpark.ie/</a>'
+            },
+            {
+                coords: {lat: 53.3755012, lng: -6.2735677},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Botanic Garden</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://botanicgardens.ie/</a>'
+            },
+            {
+                coords: {lat: 53.355998576, lng: -6.32166538},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',////////////////////add picture
+                content: '<h1>Phoenix Park</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://phoenixpark.ie/</a>'
+            },
+            {
+                coords: {lat: 53.460259, lng: -6.219985},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Swords Castle</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://swordscastle.events/</a>'
+            },
+            {
+                coords: {lat: 53.37923, lng: -6.07201},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Howth</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://www.visithowth.ie/</a>'
+            },
+            {
+                coords: {lat: 55.1364, lng: -7.456},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Buncrana</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://en.wikipedia.org/wiki/Buncrana</a>'
+            },
+
+            {
+                coords: {lat: 53.152999388, lng: -6.1499994},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Great sugar loaf</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://visitwicklow.ie/item/the-sugarloaf-trail/</a>'
+            },
+            {
+                coords: {lat: 52.0058, lng: -9.5562},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Killarney National Park </h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.killarneynationalpark.ie/</a>'
+            },
+            {
+                coords: {lat: 51.942662896, lng: -9.917162998},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Ring of Kerry</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://ringofkerrytourism.com/</a>'
+            },
+            {
+                coords: {lat: 52.679, lng: -7.814},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',//add picture!!!!!!!!!!!!!!!
+                content: '<h1>Thurles</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.tipperary.com/thurles</a>'
+            },
+            {
+                coords: {lat: 52.348, lng: -6.517},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Irish National Heritage Park</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://www.irishheritage.ie/</a>'
+            },
+            {
+                coords: {lat: 53.018, lng: -6.398},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1> Wicklow Mountains National Park</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.wicklowmountainsnationalpark.ie/</a>'
+            },
+            {
+                coords: {lat: 53.011299, lng: -6.326156},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1> Glendalough </h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://www.glendalough.ie/</a>'
+            },
+            {
+                coords: {lat: 53.1876492494, lng: -6.083832998},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1> Bray</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://www.bray.ie/</a>'
+            },
+            {
+                coords: {lat: 53.144, lng: -6.072},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Greystones</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://visitwicklow.ie/item/greystones/</a>'
+            },
+            {
+                coords: {lat: 52.518664592, lng: -7.887329784},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Rock of Cashel</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.cashel.ie/</a>'
+            },
+            {
+                coords: {lat: 52.6477, lng: -7.2561},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Killenny</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://visitkilkenny.ie/</a>'
+            },
+            //cork
+            {
+                coords: {lat: 51.902694, lng: -8.4767},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Museum of Butter</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://thebuttermuseum.com/</a>'
+            },
+            {
+                coords: {lat: 51.89953, lng: -8.499022},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Cork City Gaol</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://corkcitygaol.com/</a>'
+            },
+
+            {
+                coords: {lat: 53.4513204, lng: -6.140871},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Malahide</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.malahide.ie/</a>'
+            },
+
+            {
+                coords: {lat: 53.2839577, lng: -9.0837658},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Galway</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.galwaytourism.ie/</a>'
+            },
+            {
+                coords: {lat: 53.470580, lng: -6.122405},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Donabate Beach</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://en.wikipedia.org/wiki/Donabate</a>'
+            },
+            {
+                coords: {lat: 52.9713299, lng: -9.4300415},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Donabate Beach</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.cliffsofmoher.ie/</a>'
+            },
+            {
+                coords: {lat: 51.8960528, lng: -8.4980693},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Cork</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://purecork.ie/</a>'
+            },
+            {
+                coords: {lat: 53.3667776, lng: -6.5064198},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Leixlip</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://pl.wikipedia.org/wiki/Leixlip</a>'
+            },
+            {
+                coords: {lat: 53.1654628, lng: -6.125499},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Little Sugar Loaf</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.greystonesguide.ie/little-sugar-loafs-big-day/</a>'
+            },
+            {
+                coords: {lat: 53.5474019, lng: -6.0933048},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Rockabill View</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>http://www.skerriesseatours.ie/trips.html</a>'
+            },
+            {
+                coords: {lat: 52.3337499, lng: -6.4906996},
+                // iconImage: 'http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png',
+                content: '<h1>Wexford</h1>' + '<br>' + '<h2>Learn More</h2>' + '<a>https://www.visitwexford.ie/</a>'
+            },
+        ];
+
+        // Loop through markers
+        var gmarkers = [];
+        for (var i = 0; i < markers.length; i++) {
+            gmarkers.push(addMarker(markers[i]));
+
+        }
+
+        //Add MArker function
+        function addMarker(props) {
+            var marker = new google.maps.Marker({
+                position: props.coords,
+                map: map,
+
+            });
+
+            if (iconImage) { //if (props.iconImage) {
+                marker.setIcon(iconImage);//props.iconImage
+            }
+
+            //Check content
+            if (props.content) {
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+                marker.addListener('click', function () {
+                    infoWindow.open(map, marker);
+                });
+            }
+            bounds.extend(marker.position) // to remember marker position to fit it in map window
+            return marker;
+        }
+
+        var markerCluster = new MarkerClusterer(map, gmarkers,
+            {
+                imagePath:   'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+        // var markerCluster = new MarkerClusterer( map, gmarkers );
+
+        map.fitBounds(bounds);//fit markers on the window
+    }
+
+    google.maps.event.addDomListener(window, 'load', initMap)
+</script>

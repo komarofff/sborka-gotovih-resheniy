@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    // var createCounter = function (countName){
+    //     var counter = 0
+    //
+    //     return function (){
+    //         console.log(countName, ++counter)
+    //     }
+    // }
+    //
+    // var counterA = createCounter('Counter A')
+    // var counterB = createCounter('Counter B')
+
+    var createCounter = function (countName) {
+        var counter = 0
+        return {
+            increment: function () {
+                counter++
+            },
+            decrement: function () {
+                counter--
+            },
+            getCounter: function () {
+                return counter
+            }
+
+        }
+    }
+
+    var counterA = createCounter('Counter A')
+    var counterB = createCounter('Counter B')
+
+    counterA.increment()
+    counterA.increment()
+    counterA.increment()
+    counterA.increment()
+
+    counterB.decrement()
+    counterB.decrement()
+
+    var calculate = function (num) {
+        return {
+            plus: function (num2) {
+                return num + num2
+            },
+            minus: function (num2) {
+                return num - num2
+            },
+            getNums: function (num2){
+                console.log('num=',num,'num2=',num2)
+            }
+        }
+    }
+    var first = calculate(20)
+    var second = calculate(20)
+    console.log(first(5))
+    console.log(second(10))
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="alert">Alert</button>
+<button id="confirm">Confirm</button>
+<button id="prompt">Prompt</button>
+
+<script>
+  document.querySelector('#alert').addEventListener('click',()=>{
+    alert("ВЫ успешно нажали на кнопку!")
+  })
+  document.querySelector('#confirm').addEventListener('click',()=>{
+   let answer = confirm('Вы уверены???') // true or false
+    if(answer){
+      alert("ВЫ успешно нажали на кнопку!")
+    }
+  })
+  document.querySelector('#prompt').addEventListener('click',()=>{
+    let answerPrompt = prompt("Введите свой возраст",18)// второе значение по умолчанию
+    console.log(answerPrompt)
+
+  })
+
+  console.log('Hello!')
+  console.warn('WARNING!')
+  console.info('INFo')
+  console.error('error here')
+
+  throw new Error('new error')// останавливает скрипт
+
+</script>
+</body>
+</html>

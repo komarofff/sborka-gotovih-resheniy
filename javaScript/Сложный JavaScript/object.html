@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const person = Object.create({
+        calculateAge(){
+            console.log('age=',new Date().getFullYear() - this.birthYear)
+        }
+    },
+        {
+        name: {
+            value: 'Anatoliy',// значение поля
+            enumerable: true,//  показывать ключ
+            writable: true, //  разрешить перезапись
+            configurable: true // разрешить удаление
+
+        },
+        birthYear: {
+            value: 1976,
+            enumerable: false,
+            writable: false,
+            configurable: false
+
+        },
+        age: {
+            get() {
+                return new Date().getFullYear() - this.birthYear
+            },
+            set(value) {
+                document.body.style.background = 'red'
+                console.log('Set age',value)
+            }
+        }
+    })
+    console.log(person)
+    // person.name = 'Anatoliy 555'
+    for (let key in person) {
+        if(person.hasOwnProperty(key)){// позволяет не показывать прототипы объекта в цикле
+            console.log('Key', key, person[key])
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+   function Car(name,year){
+    this.name = name
+    this.year =  year
+   }
+
+   Car.prototype.getAge = function (){
+       return new Date().getFullYear() - this.year
+   }
+   Car.prototype.color = 'black'
+
+   var ford =  new Car('Ford',2018)
+   var bmw = new Car('BMW',2017)
+   var kia =new Car('KIA',2020)
+
+   console.log(ford)
+   console.log(bmw.getAge())
+
+   ///////////////////////////////////////////
+
+   function Person(name = null, dateOfBirth = null, height = null, weight = null,family = null){
+       this.name = name
+       this.dateOfBirth = dateOfBirth
+       this.height = height
+       this.name = weight
+       this.family = family
+   }
+
+   var Komarov = new Person(
+       'Anatoliy Komarov',
+        1976,
+       183,
+       103,
+       {wife: 'Ekaterina',
+        daughter: 'Kristina'
+       }
+   )
+
+   var petrov = new Person()
+   petrov.name = 'Petrov'
+   console.log(petrov)
+
+
+</script>
+</body>
+</html>

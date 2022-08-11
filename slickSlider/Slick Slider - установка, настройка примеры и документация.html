@@ -1,0 +1,2311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0091)https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="shortcut icon" href="https://bezramok-tlt.ru/img/tpl/favicon/favicon.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://bezramok-tlt.ru/img/tpl/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://bezramok-tlt.ru/img/tpl/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://bezramok-tlt.ru/img/tpl/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" href="https://bezramok-tlt.ru/img/tpl/favicon/apple-touch-icon.png">
+    <title>Slick Slider - установка, настройка примеры и документация</title>
+    <meta name="keywords" content="slick, responsive, carousel, slider, jQuery, plugin, CSS3, swipe, touch">
+<meta name="description" content="Slick является адаптивной каруселью JQuery плагина, который поддерживает несколько контрольных точек, CSS3 переходы, события и многое другое! Slick - последняя карусель, которая вам когда-либо понадобится!">
+<meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="bwUERnx8Wocc-oj-mNptogUhh_XNqN-DbVDg6_x_lCkVY1wjBAoX1nXIv7jL7Sr7U3LmmbrbrtkjCaGKqz2nHA==">
+
+<link href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya" rel="canonical">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/github.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/slick.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/slick-theme.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/wbbtheme.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/font-awesome.min.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/bootstrap.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/site.css" rel="stylesheet">
+<link href="./Slick Slider - установка, настройка примеры и документация_files/main.css" rel="stylesheet">
+<style>.slider h3 {background: #ff4000;color: #ffffff;font-size: 36px;line-height: 100px;margin: 10px;padding: 2%;position: relative;text-align: center;}.variable-width .slick-slide p {background: #ff4000;height: 100px;color: #fff;margin: 5px;line-height: 100px;position: relative;text-align: center;}.slick-slide img {border: 5px solid #fff;display: block;width: 100%;}.fade:not(.show) {opacity: 1;}</style>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./Slick Slider - установка, настройка примеры и документация_files/recaptcha__ru.js.Без названия" crossorigin="anonymous" integrity="sha384-phHyiO71DTETZXxEyoVsrcN0wWdmShNErvaY8+6U2AJEnypP5VkEiU1LYTPjxmmu"></script><script async="" src="./Slick Slider - установка, настройка примеры и документация_files/analytics.js.Без названия"></script><script async="" src="./Slick Slider - установка, настройка примеры и документация_files/tag.js.Без названия"></script><script async="" src="./Slick Slider - установка, настройка примеры и документация_files/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-48325882-1');
+</script><style>@media print {#ghostery-tracker-tally {display:none !important}}</style>        <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(1372899, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+    });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/1372899" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->        <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48325882-1', 'auto');
+    ga('send', 'pageview');
+
+</script>        <script async="" src="./Slick Slider - установка, настройка примеры и документация_files/f.txt" crossorigin="anonymous"></script>    
+</head>
+
+<body class="p-body-40">
+    <a href="javascript:" id="return-to-top" style="display: none;"><i class="fa fa-angle-up"></i></a>
+<!-- Navigation -->
+<nav id="w3" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="https://bezramok-tlt.ru/"><img src="./Slick Slider - установка, настройка примеры и документация_files/logo40x40.png" width="40" height="40" alt="Logo bezramok-tlt" loading="lazy"> BEZ { <span> RAMOK-TLT </span> }</a>
+<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#w3-collapse" aria-controls="w3-collapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+<div id="w3-collapse" class="collapse navbar-collapse">
+<ul id="w4" class="navbar-nav ml-auto nav"><li class="nav-item"><a class="главная nav-link" href="https://bezramok-tlt.ru/">Главная</a></li>
+<li class="nav-item"><a class="php nav-link" href="https://bezramok-tlt.ru/blog/php">PHP</a></li>
+<li class="nav-item active"><a class="jquery nav-link" href="https://bezramok-tlt.ru/blog/jquery">JQuery</a></li>
+<li class="nav-item"><a class="html nav-link" href="https://bezramok-tlt.ru/blog/html">HTML</a></li>
+<li class="nav-item"><a class="powershell nav-link" href="https://bezramok-tlt.ru/blog/powershell">Powershell</a></li>
+<li class="nav-item"><a class="linux nav-link" href="https://bezramok-tlt.ru/blog/linux">linux</a></li></ul></div>
+</div>
+</nav>
+    <div class="page-banner-area section pb-60 pt-60 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="page-banner col-xs-12">
+                    <h2 class="text-left">Slick Slider - установка, настройка примеры и документация</h2>
+                    <nav aria-label="breadcrumb"><ol id="w5" class="breadcrumb"><li class="breadcrumb-item"><a href="https://bezramok-tlt.ru/">Главная</a></li>
+<li class="breadcrumb-item"><a href="https://bezramok-tlt.ru/blog/jquery">JQuery</a></li>
+<li class="breadcrumb-item active" aria-current="page">Slick Slider - установка, настройка примеры и документация</li>
+</ol></nav>                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Banner Area End -->
+
+<!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+              <!-- Blog Entries Column -->
+      <div class="col-md-12">
+
+        
+<div class="row">
+    <div class="col-12">
+                <img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/slick.jpg" alt="Slick Slider - установка, настройка примеры и документация">    </div>
+</div>
+<section class="post mt-5 mb-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="h1">Slick Slider - установка, настройка примеры и документация</h1>
+        </div>
+        <div class="col-12">
+            <p>Один из популярнейших слайдеров на Jquery является <b>Slick Slider</b>. И это не мудрено, так как данный плагин умеет очень много. В большинстве случаев вы будите использовать общепринятые модели слайдера, но давайте взглянем на, что способен данный плагин. А способен о на многое. Для начала подключаем файлы стилей к нашему проекту, я буду в примере использовать файлы из <b>CDN</b> вы можете скачать дистрибудив слайдера <b>Slick</b> с офф. сайта или с Github <a href="https://github.com/kenwheeler/slick/" title="Адаптивный слайдер Slick">https://github.com/kenwheeler/slick/</a></p>
+
+<h2 class="my-4 text-center">Подключаем файлы стилей.</h2>
+
+<pre><code class="html hljs xml">
+<span class="hljs-comment">&lt;!-- Добавляем стили из CDN --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"</span>/&gt;</span>
+<span class="hljs-comment">&lt;!-- Добавляем тему по умолчанию из CDN --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"</span>/&gt;</span>
+                </code></pre>
+
+<h2 class="my-4 text-center">Подключаем сам плагин.</h2>
+
+<p>Данный код должен быть в самом конце, перед закрывающим тегом <code>&lt;/body&gt;</code></p>
+
+<pre><code class="html hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+                </code></pre>
+
+<ul class="my-4">
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#single">Одиночный слайд</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#multi">Несколько слайдов</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#respons">Адаптивный слайдер</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#width">Различная ширина слайдов</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#height">Различная высота слайдов</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#data">Настройка с Data атрибутом</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#center">Режим центрирования слайда</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#lazy">Ленивая загрузка</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#autoplay">Автоматическая прокрутка</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#fade">Смена слайдов размытием Fade</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#add-remove">Добавление и удаление слайдов</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#filtering">Фильтрация слайдов</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#unslick">Уничтожить объект</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#slider-for">Синхронизация слайдеров</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#single-item-rtl">Справа налево</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#settings">Насторйки</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#event">События</a></li>
+	<li><a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#method">Методы</a></li>
+</ul>
+
+<div class="row"><a name="single"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Одиночный слайд</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider single-item slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 14430px; transform: translate3d(-1110px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1110px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+<h3>1</h3>
+</div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+<h3>2</h3>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+<h3>3</h3>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control04">
+<h3>5</h3>
+</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide05" aria-describedby="slick-slide-control05">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>6</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 6" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 6" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 6" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 6" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control04" aria-controls="slick-slide04" aria-label="5 of 6" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control05" aria-controls="slick-slide05" aria-label="6 of 6" tabindex="-1">6</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    <span class="hljs-comment">//Иницилизируем слайдер с параметрами по умолчанию</span>
+                    $(<span class="hljs-string">'.single-item'</span>).slick();
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="multi"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Несколько слайдов</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider multiple-items slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 7770px; transform: translate3d(-1110px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>9</h3>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide10" aria-describedby="slick-slide-control10">
+<h3>1</h3>
+</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide11">
+<h3>2</h3>
+</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide12">
+<h3>3</h3>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide13" aria-describedby="slick-slide-control11">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide14">
+<h3>5</h3>
+</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide15">
+<h3>6</h3>
+</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide16" aria-describedby="slick-slide-control12">
+<h3>7</h3>
+</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide17">
+<h3>8</h3>
+</div><div class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide18">
+<h3>9</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="16" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>9</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control10" aria-controls="slick-slide10" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control11" aria-controls="slick-slide13" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control12" aria-controls="slick-slide16" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    <span class="hljs-comment">//Указываем что будем выводить по 3 слайда на экран</span>
+                    $(<span class="hljs-string">'.multiple-items'</span>).slick({
+                      <span class="hljs-attr">infinite</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                      <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">3</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="responsive"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Адаптивный слайдер</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider responsive slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 2224px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide50" aria-describedby="slick-slide-control50">
+<h3>1</h3>
+</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide51">
+<h3>2</h3>
+</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide52">
+<h3>3</h3>
+</div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide53">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide54" aria-describedby="slick-slide-control51">
+<h3>5</h3>
+</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide55">
+<h3>6</h3>
+</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide56">
+<h3>7</h3>
+</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide57">
+<h3>8</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control50" aria-controls="slick-slide50" aria-label="1 of 2" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control51" aria-controls="slick-slide54" aria-label="2 of 2" tabindex="-1">2</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    <span class="hljs-comment">//Настройки по выводу слайдов в зависимости от разрешения экрана</span>
+                    $(<span class="hljs-string">'.responsive'</span>).slick({
+                          <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+                          <span class="hljs-attr">infinite</span>: <span class="hljs-literal">false</span>,
+                          <span class="hljs-attr">speed</span>: <span class="hljs-number">300</span>,
+                          <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">4</span>,
+                          <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">4</span>,
+                          <span class="hljs-attr">responsive</span>: [
+                            {
+                              <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">1024</span>,
+                              <span class="hljs-attr">settings</span>: {
+                                <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                                <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">3</span>,
+                                <span class="hljs-attr">infinite</span>: <span class="hljs-literal">true</span>,
+                                <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>
+                              }
+                            },
+                            {
+                              <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">600</span>,
+                              <span class="hljs-attr">settings</span>: {
+                                <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">2</span>,
+                                <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">2</span>
+                              }
+                            },
+                            {
+                              <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">480</span>,
+                              <span class="hljs-attr">settings</span>: {
+                                <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">1</span>,
+                                <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>
+                              }
+                            }
+                          ]
+                        });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="width"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Различная ширина слайдов</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider variable-width slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 30000px; transform: translate3d(55px, 0px, 0px);"><div style="width: 225px;" class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" tabindex="-1">
+<p>225</p>
+</div><div style="width: 125px;" class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" tabindex="-1">
+<p>125</p>
+</div><div style="width: 200px;" class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide20" aria-describedby="slick-slide-control20">
+<p>200</p>
+</div><div style="width: 175px;" class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21">
+<p>175</p>
+</div><div style="width: 150px;" class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide22" aria-describedby="slick-slide-control22">
+<p>150</p>
+</div><div style="width: 300px;" class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide23" aria-describedby="slick-slide-control23">
+<p>300</p>
+</div><div style="width: 225px;" class="slick-slide" data-slick-index="4" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide24" aria-describedby="slick-slide-control24">
+<p>225</p>
+</div><div style="width: 125px;" class="slick-slide" data-slick-index="5" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide25" aria-describedby="slick-slide-control25">
+<p>125</p>
+</div><div style="width: 200px;" class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" tabindex="-1">
+<p>200</p>
+</div><div style="width: 175px;" class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" tabindex="-1">
+<p>175</p>
+</div><div style="width: 150px;" class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" tabindex="-1">
+<p>150</p>
+</div><div style="width: 300px;" class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" tabindex="-1">
+<p>300</p>
+</div><div style="width: 225px;" class="slick-slide slick-cloned slick-center" data-slick-index="10" id="" aria-hidden="true" tabindex="-1">
+<p>225</p>
+</div><div style="width: 125px;" class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" tabindex="-1">
+<p>125</p>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control20" aria-controls="slick-slide20" aria-label="1 of 6" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control21" aria-controls="slick-slide21" aria-label="2 of 6" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control22" aria-controls="slick-slide22" aria-label="3 of 6" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control23" aria-controls="slick-slide23" aria-label="4 of 6" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control24" aria-controls="slick-slide24" aria-label="5 of 6" tabindex="-1">5</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control25" aria-controls="slick-slide25" aria-label="6 of 6" tabindex="-1">6</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.variable-width'</span>).slick({
+                      <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">infinite</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">speed</span>: <span class="hljs-number">300</span>,
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">1</span>,
+                      <span class="hljs-attr">centerMode</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">variableWidth</span>: <span class="hljs-literal">true</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="height"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Различная высота слайдов</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider one-time slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable" style="height: 164.375px;"><div class="slick-track" style="opacity: 1; width: 9990px; transform: translate3d(-1110px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>4</h3>
+
+<p>Woo!</p>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1110px;" tabindex="0" role="tabpanel" id="slick-slide40" aria-describedby="slick-slide-control40">
+<h3>1</h3>
+</div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide41" aria-describedby="slick-slide-control41">
+<h3>2</h3>
+
+<p>Look ma!</p>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide42" aria-describedby="slick-slide-control42">
+<h3>3</h3>
+
+<p>Check<br>
+this out!</p>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide43" aria-describedby="slick-slide-control43">
+<h3>4</h3>
+
+<p>Woo!</p>
+</div><div class="slick-slide slick-cloned" data-slick-index="4" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>2</h3>
+
+<p>Look ma!</p>
+</div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>3</h3>
+
+<p>Check<br>
+this out!</p>
+</div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>4</h3>
+
+<p>Woo!</p>
+</div></div></div>
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control40" aria-controls="slick-slide40" aria-label="1 of 4" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control41" aria-controls="slick-slide41" aria-label="2 of 4" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control42" aria-controls="slick-slide42" aria-label="3 of 4" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control43" aria-controls="slick-slide43" aria-label="4 of 4" tabindex="-1">4</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.one-time'</span>).slick({
+                      <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">infinite</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">speed</span>: <span class="hljs-number">300</span>,
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">1</span>,
+                      <span class="hljs-attr">adaptiveHeight</span>: <span class="hljs-literal">true</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4">
+<div class="col-12 my-4 text-center"><a name="data"></a>
+
+<h2>Настройка с Data атрибутом</h2>
+
+<p>Начиная с <b>Slick 1.5</b> вы можете добавлять настройки, используя атрибут <b>data-slick</b>. Вам все еще нужно вызвать <b>$(element).slick()</b>, чтобы инициализировать Slick на элементе.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider data slick-initialized slick-slider" data-slick="{&quot;slidesToShow&quot;: 4, &quot;slidesToScroll&quot;: 4}"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5560px; transform: translate3d(-1112px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 278px;" tabindex="0">
+<h3>1</h3>
+</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 278px;" tabindex="0">
+<h3>2</h3>
+</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 278px;" tabindex="0">
+<h3>3</h3>
+</div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 278px;" tabindex="0">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>8</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+</div>
+
+<div class="col-12">
+<pre><code class="html hljs xml">
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-slick</span>=<span class="hljs-string">'{"slidesToShow": 4, "slidesToScroll": 4}'</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>6<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="center"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Режим центрирования слайда</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider center slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable" style="padding: 0px 60px;"><div class="slick-track" style="opacity: 1; width: 6600px; transform: translate3d(-990px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" style="width: 330px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" style="width: 330px;" tabindex="0">
+<h3>1</h3>
+</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 330px;" tabindex="0">
+<h3>2</h3>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 330px;" tabindex="0">
+<h3>3</h3>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned slick-center" data-slick-index="12" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" style="width: 330px;" tabindex="-1">
+<h3>8</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.center'</span>).slick({
+                      <span class="hljs-attr">centerMode</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">centerPadding</span>: <span class="hljs-string">'60px'</span>,
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                      <span class="hljs-attr">responsive</span>: [
+                        {
+                          <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">768</span>,
+                          <span class="hljs-attr">settings</span>: {
+                            <span class="hljs-attr">arrows</span>: <span class="hljs-literal">false</span>,
+                            <span class="hljs-attr">centerMode</span>: <span class="hljs-literal">true</span>,
+                            <span class="hljs-attr">centerPadding</span>: <span class="hljs-string">'40px'</span>,
+                            <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>
+                          }
+                        },
+                        {
+                          <span class="hljs-attr">breakpoint</span>: <span class="hljs-number">480</span>,
+                          <span class="hljs-attr">settings</span>: {
+                            <span class="hljs-attr">arrows</span>: <span class="hljs-literal">false</span>,
+                            <span class="hljs-attr">centerMode</span>: <span class="hljs-literal">true</span>,
+                            <span class="hljs-attr">centerPadding</span>: <span class="hljs-string">'40px'</span>,
+                            <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">1</span>
+                          }
+                        }
+                      ]
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="lazy"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Ленивая загрузка</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="lazy slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5550px; transform: translate3d(-1110px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/4.jpg"></div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/5.jpg"></div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/6.jpg"></div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 370px;" tabindex="0"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/1.jpg" style="opacity: 1;"></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 370px;" tabindex="0"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/2.jpg" style="opacity: 1;"></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 370px;" tabindex="0"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/3.jpg" style="opacity: 1;"></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/4.jpg"></div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/5.jpg"></div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/6.jpg"></div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/1.jpg"></div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/2.jpg"></div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid slick-loading" data-lazy="/img/posts/posts/slick/3.jpg"></div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/4.jpg" style="opacity: 1;"></div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/5.jpg" style="opacity: 1;"></div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 370px;" tabindex="-1"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/6.jpg" style="opacity: 1;"></div></div></div>
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    <span class="hljs-comment">// Используйте леневую загрузку устаноиви ее в data-lazy атрибудет</span>
+                    <span class="hljs-comment">// В нем укажите источник к файлу в место SRC</span>
+
+                    &lt;img data-lazy=<span class="hljs-string">"img/lazyfonz1.png"</span>/&gt;
+
+                    $(<span class="hljs-string">'.lazy'</span>).slick({
+                      <span class="hljs-attr">lazyLoad</span>: <span class="hljs-string">'ondemand'</span>,
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                      <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="autoplay"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Автоматическая прокрутка</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider autoplay slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 7030px; transform: translate3d(-2220px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide80" aria-describedby="slick-slide-control80">
+<h3>1</h3>
+</div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide81" aria-describedby="slick-slide-control81">
+<h3>2</h3>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide82" aria-describedby="slick-slide-control82">
+<h3>3</h3>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="3" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide83" aria-describedby="slick-slide-control83">
+<h3>4</h3>
+</div><div class="slick-slide slick-active" data-slick-index="4" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide84" aria-describedby="slick-slide-control84">
+<h3>5</h3>
+</div><div class="slick-slide slick-active" data-slick-index="5" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide85" aria-describedby="slick-slide-control85">
+<h3>6</h3>
+</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide86" aria-describedby="slick-slide-control86">
+<h3>7</h3>
+</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 370px;" tabindex="-1" role="tabpanel" id="slick-slide87" aria-describedby="slick-slide-control87">
+<h3>8</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="10" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="11" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" style="width: 370px;" tabindex="-1">
+<h3>8</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control80" aria-controls="slick-slide80" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control81" aria-controls="slick-slide81" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control82" aria-controls="slick-slide82" aria-label="3 of 3" tabindex="-1">3</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control83" aria-controls="slick-slide83" aria-label="4 of 3" tabindex="0" aria-selected="true">4</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control84" aria-controls="slick-slide84" aria-label="5 of 3" tabindex="-1">5</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control85" aria-controls="slick-slide85" aria-label="6 of 3" tabindex="-1">6</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control86" aria-controls="slick-slide86" aria-label="7 of 3" tabindex="-1">7</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control87" aria-controls="slick-slide87" aria-label="8 of 3" tabindex="-1">8</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.autoplay'</span>).slick({
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                      <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>,
+                      <span class="hljs-attr">autoplay</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">autoplaySpeed</span>: <span class="hljs-number">2000</span>,
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="fade"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Смена слайдов размытием Fade</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="fade slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3330px;"><div class="image slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1110px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0" role="tabpanel" id="slick-slide90" aria-describedby="slick-slide-control90"><img class="img-fluid" height="400" src="./Slick Slider - установка, настройка примеры и документация_files/morris_bar.jpg" width="1100"></div><div class="image slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1110px; position: relative; left: -1110px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="tabpanel" id="slick-slide91" aria-describedby="slick-slide-control91"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/morris_donut.jpg"></div><div class="image slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1110px; position: relative; left: -2220px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1" role="tabpanel" id="slick-slide92" aria-describedby="slick-slide-control92"><img class="img-fluid" src="./Slick Slider - установка, настройка примеры и документация_files/morris_line.jpg"></div></div></div>
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control90" aria-controls="slick-slide90" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control91" aria-controls="slick-slide91" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control92" aria-controls="slick-slide92" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.fade'</span>).slick({
+                      <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">infinite</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">speed</span>: <span class="hljs-number">500</span>,
+                      <span class="hljs-attr">fade</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">cssEase</span>: <span class="hljs-string">'linear'</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="add-remove"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Добавление и удаление слайдов</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider add-remove slick-initialized slick-slider slick-dotted">
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 370px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 370px;" tabindex="0" role="tabpanel" id="slick-slide100" aria-describedby="slick-slide-control100">
+<h3>1</h3>
+</div></div></div>
+<ul class="slick-dots" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control100" aria-controls="slick-slide100" aria-label="1 of 1" tabindex="0" aria-selected="true">1</button></li></ul></div>
+</div>
+
+<div class="col-12 text-center"><a class="btn btn-primary js-add-slide" href="javascript:void(0)">Добавить слайд</a> <a class="btn btn-primary js-remove-slide" href="javascript:void(0)">Удалить слайд</a></div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+$(<span class="hljs-string">'.add-remove'</span>).slick({
+    <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+    <span class="hljs-attr">speed</span>: <span class="hljs-number">500</span>,
+    <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">3</span>
+  });
+  <span class="hljs-keyword">var</span> slideIndex = <span class="hljs-number">1</span>;
+  $(<span class="hljs-string">'.js-add-slide'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    slideIndex++;
+    $(<span class="hljs-string">'.add-remove'</span>).slick(<span class="hljs-string">'slickAdd'</span>,<span class="hljs-string">'&lt;div&gt;&lt;h3&gt;'</span> + slideIndex + <span class="hljs-string">'&lt;/h3&gt;&lt;/div&gt;'</span>);
+  });
+
+  $(<span class="hljs-string">'.js-remove-slide'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $(<span class="hljs-string">'.add-remove'</span>).slick(<span class="hljs-string">'slickRemove'</span>,slideIndex - <span class="hljs-number">1</span>);
+    <span class="hljs-keyword">if</span> (slideIndex !== <span class="hljs-number">0</span>){
+      slideIndex--;
+    }
+  });
+</code>
+</pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="filtering"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Фильтрация слайдов</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider filtering slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 7784px; transform: translate3d(-1112px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>9</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>10</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>11</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>12</h3>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide110" aria-describedby="slick-slide-control110">
+<h3>1</h3>
+</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide111">
+<h3>2</h3>
+</div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide112">
+<h3>3</h3>
+</div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 278px;" tabindex="0" role="tabpanel" id="slick-slide113">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide114" aria-describedby="slick-slide-control111">
+<h3>5</h3>
+</div><div class="slick-slide" data-slick-index="5" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide115">
+<h3>6</h3>
+</div><div class="slick-slide" data-slick-index="6" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide116">
+<h3>7</h3>
+</div><div class="slick-slide" data-slick-index="7" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide117">
+<h3>8</h3>
+</div><div class="slick-slide" data-slick-index="8" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide118" aria-describedby="slick-slide-control112">
+<h3>9</h3>
+</div><div class="slick-slide" data-slick-index="9" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide119">
+<h3>10</h3>
+</div><div class="slick-slide" data-slick-index="10" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide1110">
+<h3>11</h3>
+</div><div class="slick-slide" data-slick-index="11" aria-hidden="true" style="width: 278px;" tabindex="-1" role="tabpanel" id="slick-slide1111">
+<h3>12</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="12" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="13" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="14" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="15" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="16" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="17" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>6</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="18" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>7</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="19" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>8</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="20" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>9</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="21" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>10</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="22" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>11</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="23" id="" aria-hidden="true" style="width: 278px;" tabindex="-1">
+<h3>12</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control110" aria-controls="slick-slide110" aria-label="1 of 3" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control111" aria-controls="slick-slide114" aria-label="2 of 3" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control112" aria-controls="slick-slide118" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+</div>
+
+<div class="col-12 text-center">
+<div class="filter"><a class="btn btn-primary js-filter" href="javascript:void(0)">Отфильтровать</a></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.filtering'</span>).slick({
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">4</span>,
+                      <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">4</span>
+                    });
+
+                    <span class="hljs-keyword">var</span> filtered = <span class="hljs-literal">false</span>;
+
+                    $(<span class="hljs-string">'.js-filter'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+                      <span class="hljs-keyword">if</span> (filtered === <span class="hljs-literal">false</span>) {
+                        $(<span class="hljs-string">'.filtering'</span>).slick(<span class="hljs-string">'slickFilter'</span>,<span class="hljs-string">':even'</span>);
+                        $(<span class="hljs-keyword">this</span>).text(<span class="hljs-string">'Unfilter Slides'</span>);
+                        filtered = <span class="hljs-literal">true</span>;
+                      } <span class="hljs-keyword">else</span> {
+                        $(<span class="hljs-string">'.filtering'</span>).slick(<span class="hljs-string">'slickUnfilter'</span>);
+                        $(<span class="hljs-keyword">this</span>).text(<span class="hljs-string">'Filter Slides'</span>);
+                        filtered = <span class="hljs-literal">false</span>;
+                      }
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4">
+<div class="col-12 my-4 text-center"><a name="unslick"></a>
+
+<h2>Уничтожить объект</h2>
+
+<p>Если ты действительно хочешь быть тем парнем ...</p>
+</div>
+
+<div class="col-12 my-4">
+<pre><code class="javascript hljs">
+                    <span class="hljs-comment">//Уничтожить объект слайдера</span>
+                    $(<span class="hljs-string">'.your-slider'</span>).slick(<span class="hljs-string">'unslick'</span>);
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="slider-for"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Синхронизация слайдеров</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider slider-for slick-initialized slick-slider">
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5550px;"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1110px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" tabindex="0">
+<h3>1</h3>
+</div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1110px; position: relative; left: -1110px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1110px; position: relative; left: -2220px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 1110px; position: relative; left: -3330px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 1110px; position: relative; left: -4440px; top: 0px; z-index: 998; opacity: 0;" tabindex="-1">
+<h3>5</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="slider slider-nav slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable" style="padding: 0px 50px;"><div class="slick-track" style="opacity: 1; width: 4718px; transform: translate3d(-1011px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-4" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-3" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="-2" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned slick-active" data-slick-index="-1" id="" aria-hidden="false" style="width: 337px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="0" aria-hidden="false" style="width: 337px;" tabindex="0" role="tabpanel" id="slick-slide130" aria-describedby="slick-slide-control130">
+<h3>1</h3>
+</div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 337px;" tabindex="0" role="tabpanel" id="slick-slide131" aria-describedby="slick-slide-control131">
+<h3>2</h3>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 337px;" tabindex="0" role="tabpanel" id="slick-slide132" aria-describedby="slick-slide-control132">
+<h3>3</h3>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 337px;" tabindex="-1" role="tabpanel" id="slick-slide133" aria-describedby="slick-slide-control133">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 337px;" tabindex="-1" role="tabpanel" id="slick-slide134" aria-describedby="slick-slide-control134">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned slick-center" data-slick-index="6" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 337px;" tabindex="-1">
+<h3>5</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control130" aria-controls="slick-slide130" aria-label="1 of 2" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control131" aria-controls="slick-slide131" aria-label="2 of 2" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control132" aria-controls="slick-slide132" aria-label="3 of 2" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control133" aria-controls="slick-slide133" aria-label="4 of 2" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control134" aria-controls="slick-slide134" aria-label="5 of 2" tabindex="-1">5</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.slider-for'</span>).slick({
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">1</span>,
+                      <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>,
+                      <span class="hljs-attr">arrows</span>: <span class="hljs-literal">false</span>,
+                      <span class="hljs-attr">fade</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">asNavFor</span>: <span class="hljs-string">'.slider-nav'</span>
+                    });
+                    $(<span class="hljs-string">'.slider-nav'</span>).slick({
+                      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+                      <span class="hljs-attr">slidesToScroll</span>: <span class="hljs-number">1</span>,
+                      <span class="hljs-attr">asNavFor</span>: <span class="hljs-string">'.slider-for'</span>,
+                      <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">centerMode</span>: <span class="hljs-literal">true</span>,
+                      <span class="hljs-attr">focusOnSelect</span>: <span class="hljs-literal">true</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4"><a name="single-item-rtl"></a>
+
+<div class="col-12 my-4 text-center">
+<h2>Справа налево</h2>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12">
+<div class="slider single-item-rtl slick-initialized slick-slider slick-dotted" dir="rtl"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 12210px; transform: translate3d(1110px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>5</h3>
+</div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1110px;" tabindex="0" role="tabpanel" id="slick-slide140" aria-describedby="slick-slide-control140">
+<h3>1</h3>
+</div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide141" aria-describedby="slick-slide-control141">
+<h3>2</h3>
+</div><div class="slick-slide" data-slick-index="2" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide142" aria-describedby="slick-slide-control142">
+<h3>3</h3>
+</div><div class="slick-slide" data-slick-index="3" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide143" aria-describedby="slick-slide-control143">
+<h3>4</h3>
+</div><div class="slick-slide" data-slick-index="4" aria-hidden="true" style="width: 1110px;" tabindex="-1" role="tabpanel" id="slick-slide144" aria-describedby="slick-slide-control144">
+<h3>5</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>1</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>2</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>3</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="8" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>4</h3>
+</div><div class="slick-slide slick-cloned" data-slick-index="9" id="" aria-hidden="true" style="width: 1110px;" tabindex="-1">
+<h3>5</h3>
+</div></div></div>
+
+
+
+
+
+
+
+
+<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="slick-active" role="presentation"><button type="button" role="tab" id="slick-slide-control140" aria-controls="slick-slide140" aria-label="1 of 5" tabindex="0" aria-selected="true">1</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control141" aria-controls="slick-slide141" aria-label="2 of 5" tabindex="-1">2</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control142" aria-controls="slick-slide142" aria-label="3 of 5" tabindex="-1">3</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control143" aria-controls="slick-slide143" aria-label="4 of 5" tabindex="-1">4</button></li><li role="presentation"><button type="button" role="tab" id="slick-slide-control144" aria-controls="slick-slide144" aria-label="5 of 5" tabindex="-1">5</button></li></ul></div>
+</div>
+
+<div class="col-12">
+<pre><code class="javascript hljs">
+                    $(<span class="hljs-string">'.single-item-rtl'</span>).slick({
+                      <span class="hljs-attr">rtl</span>: <span class="hljs-literal">true</span>
+                    });
+                </code></pre>
+</div>
+</div>
+
+<div class="row my-4">
+<div class="col-12"><a name="settings"></a>
+
+<h3 class="text-center">Насторйки</h3>
+
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th class="first">Setting</th>
+			<th class="type">Type</th>
+			<th class="default">Default</th>
+			<th class="last">Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>accessibility</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Включает вкладки и навигацию по клавишам со стрелками</td>
+		</tr>
+		<tr>
+			<td>adaptiveHeight</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Обеспечивает адаптивную высоту для односкатных горизонтальных каруселей.</td>
+		</tr>
+		<tr>
+			<td>autoplay</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Включает автоигру</td>
+		</tr>
+		<tr>
+			<td>autoplaySpeed</td>
+			<td>Int (мс)</td>
+			<td>3000</td>
+			<td>Автоигра Скорость в миллисекундах</td>
+		</tr>
+		<tr>
+			<td>arrows</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Предыдущая / Следующая Стрелки</td>
+		</tr>
+		<tr>
+			<td>asNavFor</td>
+			<td>string</td>
+			<td>ноль</td>
+			<td>Установите ползунок для навигации по другому ползунку (имя класса или идентификатора)</td>
+		</tr>
+		<tr>
+			<td>appendArrows</td>
+			<td>string</td>
+			<td>$(element)</td>
+			<td>Изменить место прикрепления навигационных стрелок (Selector, htmlString, Array, Element, jQuery object)</td>
+		</tr>
+		<tr>
+			<td>appendDots</td>
+			<td>string</td>
+			<td>$(element)</td>
+			<td>Изменить местоположение точек навигации (Selector, htmlString, Array, Element, object jQuery)</td>
+		</tr>
+		<tr>
+			<td>prevArrow</td>
+			<td>string (html | jQuery селектор) | объект (узел DOM | объект jQuery)</td>
+			<td>&lt;button type = "button" class = "slick-prev"&gt; Предыдущая &lt;/ button&gt;</td>
+			<td>Позволяет выбрать узел или настроить HTML-код для стрелки «Назад».</td>
+		</tr>
+		<tr>
+			<td>nextArrow</td>
+			<td>string (html | jQuery селектор) | объект (узел DOM | объект jQuery)</td>
+			<td>&lt;button type = "button" class = "slick-next"&gt; Next &lt;/ button&gt;</td>
+			<td>Позволяет выбрать узел или настроить HTML-код для стрелки «Далее».</td>
+		</tr>
+		<tr>
+			<td>centerMode</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Включает центрированный вид с частичными предыдущими / следующими слайдами. Используйте с нечетным номером слайдов ToShow.</td>
+		</tr>
+		<tr>
+			<td>centerPadding</td>
+			<td>string</td>
+			<td>'50px'</td>
+			<td>Боковые отступы в центральном режиме (px или %)</td>
+		</tr>
+		<tr>
+			<td>cssEase</td>
+			<td>string</td>
+			<td>'ease'</td>
+			<td>CSS3 Animation Easing</td>
+		</tr>
+		<tr>
+			<td>customPaging</td>
+			<td>function</td>
+			<td>n/a</td>
+			<td>Пользовательские шаблоны подкачки. Смотрите источник для примера использования.</td>
+		</tr>
+		<tr>
+			<td>dots</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Показать точечные индикаторы</td>
+		</tr>
+		<tr>
+			<td>dotsClass</td>
+			<td>string</td>
+			<td>'slick-dots'</td>
+			<td>Класс для контейнера точек индикатора слайда</td>
+		</tr>
+		<tr>
+			<td>draggable</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Включить перетаскивание мышью</td>
+		</tr>
+		<tr>
+			<td>fade</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Включить затухание</td>
+		</tr>
+		<tr>
+			<td>focusOnSelect</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Включить фокус на выбранный элемент (нажмите)</td>
+		</tr>
+		<tr>
+			<td>easing</td>
+			<td>string</td>
+			<td>'linear'</td>
+			<td>Добавьте ослабление для jQuery animate. Использовать с библиотеками замедления или методами по умолчанию</td>
+		</tr>
+		<tr>
+			<td>edgeFriction</td>
+			<td>integer</td>
+			<td>0,15</td>
+			<td>Сопротивление при смахивании краев бесконечной карусели</td>
+		</tr>
+		<tr>
+			<td>infinite</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Бесконечный цикл скольжения</td>
+		</tr>
+		<tr>
+			<td>initialSlide</td>
+			<td>integer</td>
+			<td>0</td>
+			<td>Слайд, чтобы начать</td>
+		</tr>
+		<tr>
+			<td>LazyLoad</td>
+			<td>string</td>
+			<td>'ondemand'</td>
+			<td>Установите ленивую технику загрузки. Принимает «по требованию» или «прогрессивный»</td>
+		</tr>
+		<tr>
+			<td>mobileFirst</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Адаптивные настройки используют мобильный первый расчет</td>
+		</tr>
+		<tr>
+			<td>pauseOnFocus</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Пауза автозапуска на фокусе</td>
+		</tr>
+		<tr>
+			<td>pauseOnHover</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Пауза автозапуска при наведении</td>
+		</tr>
+		<tr>
+			<td>pauseOnDotsHover</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Приостановка автозапуска при наведении точки</td>
+		</tr>
+		<tr>
+			<td>respondTo</td>
+			<td>string</td>
+			<td>'window'</td>
+			<td>Ширина, на которую реагирует реагирующий объект. Может быть «окно», «слайдер» или «мин» (меньшее из двух)</td>
+		</tr>
+		<tr>
+			<td>responsive</td>
+			<td>object</td>
+			<td>none</td>
+			<td>Объект, содержащий точки останова и объекты настроек (см. Демонстрацию). Включает настройки для заданной ширины экрана. Установите настройки «unlick» вместо объекта, чтобы отключить slick в заданной точке останова.</td>
+		</tr>
+		<tr>
+			<td>rows</td>
+			<td>int</td>
+			<td>1</td>
+			<td>Установка более 1 инициализирует режим сетки. Используйте slidesPerRow, чтобы установить, сколько слайдов должно быть в каждой строке.</td>
+		</tr>
+		<tr>
+			<td>slide</td>
+			<td>element</td>
+			<td>''</td>
+			<td>Элемент запроса для использования в качестве слайда</td>
+		</tr>
+		<tr>
+			<td>slidesPerRow</td>
+			<td>int</td>
+			<td>1</td>
+			<td>С режимом сетки, инициализированным с помощью опции строк, это устанавливает, сколько слайдов в каждой строке сетки. Дверь</td>
+		</tr>
+		<tr>
+			<td>slidesToShow</td>
+			<td>int</td>
+			<td>1</td>
+			<td>Количество слайдов для показа</td>
+		</tr>
+		<tr>
+			<td>slidesToScroll</td>
+			<td>int</td>
+			<td>1</td>
+			<td>Количество слайдов для прокрутки</td>
+		</tr>
+		<tr>
+			<td>speed</td>
+			<td>Int (мс)</td>
+			<td>300</td>
+			<td>Скорость анимации скольжения / затухания</td>
+		</tr>
+		<tr>
+			<td>swipe</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Включить смахивание</td>
+		</tr>
+		<tr>
+			<td>swipeToSlide</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Разрешить пользователям перетаскивать или проводить пальцем прямо к слайду независимо от слайдов ToScroll</td>
+		</tr>
+		<tr>
+			<td>TouchMove</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Включить движение слайдов одним касанием</td>
+		</tr>
+		<tr>
+			<td>touchThreshold</td>
+			<td>int</td>
+			<td>5</td>
+			<td>Для продвижения слайдов пользователь должен провести пальцем по длине (1 / touchThreshold) * ширина слайдера</td>
+		</tr>
+		<tr>
+			<td>useCSS</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Включить / отключить CSS-переходы</td>
+		</tr>
+		<tr>
+			<td>useTransform</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Включить / отключить CSS-преобразования</td>
+		</tr>
+		<tr>
+			<td>variableWidth</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Слайды переменной ширины</td>
+		</tr>
+		<tr>
+			<td>вертикальный</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Режим вертикального скольжения</td>
+		</tr>
+		<tr>
+			<td>verticalSwiping</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Режим вертикальной прокрутки</td>
+		</tr>
+		<tr>
+			<td>rtl</td>
+			<td>boolean</td>
+			<td>false</td>
+			<td>Измените направление ползунка, чтобы стать справа налево</td>
+		</tr>
+		<tr>
+			<td>waitForAnimate</td>
+			<td>boolean</td>
+			<td>true</td>
+			<td>Игнорирует запросы на продвижение слайда во время анимации</td>
+		</tr>
+		<tr>
+			<td>zIndex</td>
+			<td>number</td>
+			<td>1000</td>
+			<td>Установите значения zIndex для слайдов, полезно для IE9 и ниже</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row my-4">
+<div class="col-12"><a name="event"></a>
+
+<h3 class="text-center">События</h3>
+
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th class="first">Событие</th>
+			<th>Аргументы</th>
+			<th class="last">Описание</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>afterChange</td>
+			<td>slick, currentSlide</td>
+			<td>Пожары после смены слайдов</td>
+		</tr>
+		<tr>
+			<td>beforeChange</td>
+			<td>slick, текущий слайд, следующий слайд</td>
+			<td>Пожары перед сменой слайдов</td>
+		</tr>
+		<tr>
+			<td>breakpoint</td>
+			<td>событие, slick, точка останова</td>
+			<td>Пожары после достижения точки останова.</td>
+		</tr>
+		<tr>
+			<td>destroy</td>
+			<td>событие, slick</td>
+			<td>Когда слайдер уничтожен или не скользит.</td>
+		</tr>
+		<tr>
+			<td>edge</td>
+			<td>slick, направление</td>
+			<td>Запускается, когда ребро прокручивается в бесконечном режиме.</td>
+		</tr>
+		<tr>
+			<td>init</td>
+			<td>slick</td>
+			<td>Срабатывает после первой инициализации.</td>
+		</tr>
+		<tr>
+			<td>reInit</td>
+			<td>slick</td>
+			<td>Срабатывает после каждой повторной инициализации</td>
+		</tr>
+		<tr>
+			<td>SetPosition</td>
+			<td>slick</td>
+			<td>Пожары после изменения положения / размера</td>
+		</tr>
+		<tr>
+			<td>swipe</td>
+			<td>slick, направление</td>
+			<td>Пожары после удара / перетаскивания</td>
+		</tr>
+		<tr>
+			<td>lazyLoaded</td>
+			<td>событие, slick, изображение, imageSource</td>
+			<td>Срабатывает после загрузки изображения лениво</td>
+		</tr>
+		<tr>
+			<td>lazyLoadError</td>
+			<td>событие, slick, изображение, imageSource</td>
+			<td>Срабатывает после того, как изображение не загружается</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-12"><a name="method"></a>
+
+<h3 class="text-center">Методы</h3>
+</div>
+
+<div class="table-responsive">
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Метод</th>
+			<th>Аргументы</th>
+			<th>Описание</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>slickCurrentSlide</td>
+			<td>none</td>
+			<td>Возвращает текущий индекс слайда</td>
+		</tr>
+		<tr>
+			<td>slickGoTo</td>
+			<td>int: номер слайда, логическое значение: не анимировать</td>
+			<td>Переходит к слайду по индексу</td>
+		</tr>
+		<tr>
+			<td>slickNext</td>
+			<td>none</td>
+			<td>Переходит к следующему слайду</td>
+		</tr>
+		<tr>
+			<td>slickPrev</td>
+			<td>none</td>
+			<td>Переходит к предыдущему слайду</td>
+		</tr>
+		<tr>
+			<td>slickPause</td>
+			<td>none</td>
+			<td>Паузы автовоспроизведения</td>
+		</tr>
+		<tr>
+			<td>slickPlay</td>
+			<td>none</td>
+			<td>Запускает автозапуск</td>
+		</tr>
+		<tr>
+			<td>slickAdd</td>
+			<td>HTML или DOM объект, индекс, addBefore</td>
+			<td>объект</td>
+		</tr>
+		<tr>
+			<td>slickRemove</td>
+			<td>index, removeBefore</td>
+			<td>Если для removeBefore задано значение false, удалите указатель, следующий за слайдом, или последний слайд, если индекс не установлен.</td>
+		</tr>
+		<tr>
+			<td>slickFilter</td>
+			<td>Селектор или функция</td>
+			<td>Фильтрует слайды, используя jQuery .filter ()</td>
+		</tr>
+		<tr>
+			<td>slickUnfilter</td>
+			<td>index</td>
+			<td>Удаляет примененную фильтрацию</td>
+		</tr>
+		<tr>
+			<td>slickGetOption</td>
+			<td>опция: string</td>
+			<td>Получает индивидуальное значение параметра.</td>
+		</tr>
+		<tr>
+			<td>slickSetOption</td>
+			<td>опция: string, значение: зависит от опции, refresh: логическое значение</td>
+			<td>Установите для параметра true значение true, если это обновление пользовательского интерфейса.</td>
+		</tr>
+		<tr>
+			<td>unslick</td>
+			<td>none</td>
+			<td>Разрушает slick</td>
+		</tr>
+		<tr>
+			<td>getSlick</td>
+			<td>none</td>
+			<td>Получить гладкий объект</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+                    </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-center">Теги</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    
+                        
+                            <a class="btn btn-secondary" href="https://bezramok-tlt.ru/tags/jquery" role="button">#Jquery</a>
+                        
+                            <a class="btn btn-secondary" href="https://bezramok-tlt.ru/tags/plugins" role="button">#Plugins</a>
+                        
+                                    </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-center">Поддержи проект:</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <iframe src="./Slick Slider - установка, настройка примеры и документация_files/button-widget.html" width="184" height="36" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+        <div class="col-12 mt-5">
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Лена </h5>
+
+                    Добрый день! Есть ли у слик слайдера возможность показать 1 слайдер и половинку второго? Так чтобы первый слайдер при прокрутке оставался полным, а последующий всегда на половину обрезался. Всего у меня 3 слайда.&nbsp;
+&nbsp; &nbsp; $(document).ready(function(){
+&nbsp; &nbsp; &nbsp; $('.histori__carousel').slick(
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; slidesToShow: 1,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; centerMode: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; centerPadding: '60px',
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; slidesToScroll: 1,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; infinite: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; speed: 700,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; autoplay: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; autoplaySpeed: 7000,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // variableWidth: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arrows: false,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; responsive: [
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; breakpoint: 769,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; settings: {
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; slidesToShow: 1,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dots: true,
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arrows: false
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ]
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+&nbsp; &nbsp; &nbsp; );
+&nbsp; &nbsp; });
+                    <p>
+                        <span class="badge badge-warning">
+                            15/12/2021 14:49:45                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Доброго времени суток!</p>
+
+<p>К сожалению такой возможности из коробки нет. Так как это относится к стилизации самого слайдера CSS.&nbsp;Добавьте вот такой CSS код&nbsp;<strong>.slick-list{padding:0 30% 0 0;}&nbsp;</strong>Процент показа правого слайда подберете под себя.</p>
+
+<p>&nbsp;</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    16/12/2021 10:21:10                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Анастасия </h5>
+
+                    Здравствуйте, пожалуйста, подскажите как добавить любому элементу класс, если например второй слайд активный? Касс slick-active не всегда отслеживается                    <p>
+                        <span class="badge badge-warning">
+                            07/12/2021 18:18:26                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Доброго времени суток.</p>
+
+<p>Не уверен, что правильно понял ваш вопрос, но всеже... Что-то мне подсказывает, что вам подойдет событие&nbsp;<strong>beforeChange</strong>&nbsp;я не так давно о нем писал одному из читателей, попробуте его найти вот дата ответа 09/08/2021 19:42:25</p>
+
+<p>Можете отслеживать смену слайда и выполнять вашу логику скрипта&nbsp;&nbsp;</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    07/12/2021 22:53:23                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Надежда </h5>
+
+                    Здравствуйте, подскажите, пожалуйста, как сделать 1,5 слайда, при том, чтобы первый слайд был виден наполовину? Заранее спасибо!                    <p>
+                        <span class="badge badge-warning">
+                            23/11/2021 14:41:56                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Добрый день!</p>
+
+<p>К сожалению такой возможности из коробки нет.&nbsp;</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    23/11/2021 15:12:25                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Анасиасия </h5>
+
+                    К предыдущему вопросу:
+Есть слайдер из 10 слайдов, показывается по одному, есть 10 svg на тему каждого слайда,&nbsp;
+Нужно, чтобы при клике на svg слайдер перелистывался сразу на нужный слайд                    <p>
+                        <span class="badge badge-warning">
+                            18/11/2021 13:42:15                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Понял, что вам нужно. Используйте <strong>slickGoTo&nbsp;</strong>у меня в примере это сделано в виде ссылок, но я думаю сможете адаптировать для своих изображениях.</p>
+
+<p>Естественно нужно понимать, что количество картинок или размещенных индексов должно быть в диапазоне количество слайдов.</p>
+
+<p>Добавьте этот код применительно вашего слайдера, должен сработать как вам нужно.</p>
+
+<pre>    <code class="javascript hljs">
+$(<span class="hljs-string">'a[data-slide]'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>) </span>{
+   e.preventDefault();
+   <span class="hljs-keyword">var</span> slideno = $(<span class="hljs-keyword">this</span>).data(<span class="hljs-string">'slide'</span>);
+   <span class="hljs-comment">//Тут селектор вашего слайдера</span>
+   $(<span class="hljs-string">'.slider'</span>).slick(<span class="hljs-string">'slickGoTo'</span>, slideno - <span class="hljs-number">1</span>);
+ });
+    </code>
+</pre>
+
+<pre>    <code class="markup hljs xml">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"action"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">data-slide</span>=<span class="hljs-string">"3"</span>&gt;</span>go to slide 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">data-slide</span>=<span class="hljs-string">"4"</span>&gt;</span>go to slide 4<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">data-slide</span>=<span class="hljs-string">"5"</span>&gt;</span>go to slide 5<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    </code>
+</pre>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    18/11/2021 17:20:03                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Анастасия </h5>
+
+                    Здравствуйте, подскажите есть ли возможность открывать определенный слайд по клику на какой-либо объект так, чтобы активная точка и стрелка подтягивались? При попытке сделать это через id слайда, слайдер не переключает слайды, а просто выводит нужный слайд.                    <p>
+                        <span class="badge badge-warning">
+                            18/11/2021 01:09:55                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Доброго времени суток!</p>
+
+<p>Если честно не совсем понял суть вашего вопроса. Может вы имели ввиду что-то типы сингхронизации слайдеров?&nbsp;<a href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#slider-for">https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#slider-for</a></p>
+
+<p>Бывает другой вариант - в основном он используется в витринах интернет-магазина. Когда с верху находится изображение увеличеного размера, а под ним крутятся миниатюры в сладере и при клике на миниатюру данное фото со слайда подставляется в контенер для большой картинке.</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    18/11/2021 13:31:42                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Сергей  </h5>
+
+                    Игорь. Была такая же проблема. В табах слайдеры. Помог реинит.                    <p>
+                        <span class="badge badge-warning">
+                            24/09/2021 03:38:26                        </span>
+                    </p>
+
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Игорь </h5>
+
+                    Проблема была в css кому интересно для дива с табом&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;absolute;
+&nbsp;&nbsp;&nbsp;left:-9999px; для active&nbsp;&nbsp;&nbsp;&nbsp;position:relative;
+&nbsp;&nbsp;&nbsp;left:0; все варианты перепробовал помог именно этот                    <p>
+                        <span class="badge badge-warning">
+                            22/09/2021 07:02:09                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Проблема не в CSS. Как решить Вашу задачу я написал сообщением ниже.</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    22/09/2021 09:33:17                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Игорь </h5>
+
+                    Ломается слайдер при переключении табов говорят что reinit помогает но не знаю как и куда его писать вот мой код
+$(document).ready(function(){&nbsp;&nbsp;
+
+
+&nbsp;&nbsp;&nbsp;$('.content__slider').slick({
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dots:&nbsp;true,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arrows:&nbsp;false,
+&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;&nbsp;$('.tabs').on('click',&nbsp;function&nbsp;(e)&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$(".content__slider").slick('reinit');
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});
+&nbsp;&nbsp;&nbsp;
+&nbsp;});
+в таком варианте добавляется куча точек dots&nbsp;                    <p>
+                        <span class="badge badge-warning">
+                            22/09/2021 06:18:41                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Доброго времени суток. Не знаю зачем Вам реинициализировать Slick Slider, но не суть.</p>
+
+<p>Для того, чтобы слайдер работал корректно нужно сначала уничтожить текуoий объект Slick Slidera и вызвать новый с текущими или новыми параметрами.</p>
+
+<pre>	<code class="javascript hljs">
+<span class="hljs-comment">//Уничтожаем текущий объект</span>
+$(<span class="hljs-string">'.content__slider'</span>).slick(<span class="hljs-string">'unslick'</span>);
+	</code>
+</pre>
+
+<p>В итоге код должен получиться таким:</p>
+
+<pre>	<code class="javascript hljs">
+<span class="hljs-comment">//Если нажали на Tabs	</span>
+$(<span class="hljs-string">'.tabs'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+	<span class="hljs-comment">//Уничтожаем объект</span>
+    $(<span class="hljs-string">'.content__slider'</span>).slick(<span class="hljs-string">'unslick'</span>);
+    
+	<span class="hljs-comment">//Инициализируем новый слайдер</span>
+    $(<span class="hljs-string">'.content__slider'</span>).slick({
+      <span class="hljs-attr">arrows</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">centerPadding</span>: <span class="hljs-string">"0px"</span>,
+      <span class="hljs-attr">dots</span>: <span class="hljs-literal">true</span>,
+      <span class="hljs-attr">slidesToShow</span>: <span class="hljs-number">3</span>,
+      <span class="hljs-attr">infinite</span>: <span class="hljs-literal">false</span>
+    });
+});
+	</code>
+</pre>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    22/09/2021 09:28:50                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Алексе </h5>
+
+                    Доброго времени суток. У меня скрин ридер читает go to slide, как мне его перевести на русский язык.
+
+Спасибо большое.                    <p>
+                        <span class="badge badge-warning">
+                            20/09/2021 18:14:49                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Доброго времени суток.</p>
+
+<p>Боюсь, что никак! Никаких языковых пакетов для Slick Slider не предусмотренны.</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    20/09/2021 21:10:40                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+            <div class="media">
+                <img src="./Slick Slider - установка, настройка примеры и документация_files/user64x64.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Никита </h5>
+
+                    Здравствуйте, а как в slick`е можно реализовать подобную картину c точками : &lt; 1 ... 4 <b>5</b>&nbsp;6&nbsp;... 10 &gt; ? 
+Т.е из десяти dots`ов показать 5, а dots`ы&nbsp;между 1 и 4 , 6 и 10 скрыть многоточиями, чтобы по мере продвижения налево многоточие тоже двигались&nbsp; и при переходе до последней страницы исчезали : &lt;<b>1 </b>2 3 ... 8 9 10 &gt;&nbsp;&lt;1&nbsp;2 3 ... 8 9 <b>10</b> &gt;                    <p>
+                        <span class="badge badge-warning">
+                            13/08/2021 12:54:13                        </span>
+                    </p>
+
+
+                    
+                    <div class="media mt-3">
+                        <a class="mr-3" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya#">
+                            <img src="./Slick Slider - установка, настройка примеры и документация_files/logo64x64.png" class="mr-3" alt="Админ">
+                        </a>
+                        <div class="media-body">
+                            <h5 class="mt-0">Админ</h5>
+
+                            <p>Доброго времени суток!</p>
+
+<p>К сожалению такой возможности из коробки нет. У сладера выводится только точки под слайдами.</p>
+
+                            <p>
+                                <span class="badge badge-success">
+                                    22/08/2021 12:23:54                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 d-flex justify-content-center mt-3">
+            <nav id="w1"><ul class="pagination"><li class="page-item prev disabled"><a class="page-link" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya" data-page="0" tabindex="-1"><span aria-hidden="true">«</span>
+<span class="sr-only">Previous</span></a></li>
+<li class="page-item active"><a class="page-link" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya" data-page="0">1</a></li>
+<li class="page-item"><a class="page-link" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya/page/2" data-page="1">2</a></li>
+<li class="page-item next"><a class="page-link" href="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya/page/2" data-page="1"><span aria-hidden="true">»</span>
+<span class="sr-only">Next</span></a></li></ul></nav>        </div>
+    </div>
+
+        <div class="row">
+        <div class="col-12 mt-5">
+            
+<div class="posts-form">
+
+    <form id="w2" action="https://bezramok-tlt.ru/blog/posts/slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya" method="post">
+<input type="hidden" name="_csrf" value="bwUERnx8Wocc-oj-mNptogUhh_XNqN-DbVDg6_x_lCkVY1wjBAoX1nXIv7jL7Sr7U3LmmbrbrtkjCaGKqz2nHA==">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group field-message-nickname required">
+<label for="message-nickname">Имя</label>
+<input type="text" id="message-nickname" class="form-control" name="Message[nickname]" maxlength="50" placeholder="Имя" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+        <div class="col-md-6">
+            <div class="form-group field-message-email">
+<label for="message-email">Email</label>
+<input type="text" id="message-email" class="form-control" name="Message[email]" maxlength="200" placeholder="Получить уведомление на Email">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group field-message-message required">
+<label for="message-message">Сообщение</label>
+<div class="wysibb"><div class="wysibb-toolbar" style="max-height: 108px;"><div class="wysibb-toolbar-container"><div class="wysibb-toolbar-btn wbb-bold"><span class="fonticon ve-tlb-bold1 btn-inner"></span><span class="btn-tooltip">Полужирный<ins></ins></span></div><div class="wysibb-toolbar-btn wbb-italic"><span class="fonticon ve-tlb-italic1 btn-inner"></span><span class="btn-tooltip">Курсив<ins></ins></span></div><div class="wysibb-toolbar-btn wbb-underline"><span class="fonticon ve-tlb-underline1 btn-inner"></span><span class="btn-tooltip">Подчеркнутый<ins></ins></span></div></div><div class="wysibb-toolbar-container"><div class="wysibb-toolbar-btn wbb-php"><span class="btn-inner btn-text">php</span><span class="btn-tooltip">PHP code<ins></ins></span></div><div class="wysibb-toolbar-btn wbb-html"><span class="btn-inner btn-text">html</span><span class="btn-tooltip">html code<ins></ins></span></div><div class="wysibb-toolbar-btn wbb-sql"><span class="btn-inner btn-text">sql</span><span class="btn-tooltip">sql code<ins></ins></span></div><div class="wysibb-toolbar-btn wbb-js"><span class="btn-inner btn-text">js</span><span class="btn-tooltip">js code<ins></ins></span></div><div class="wysibb-toolbar-btn wbb-ps"><span class="btn-inner btn-text">ps</span><span class="btn-tooltip">ps code<ins></ins></span></div></div><div class="wysibb-toolbar-container modeSwitch"><div class="wysibb-toolbar-btn mswitch" unselectable="on"><span class="btn-inner modesw" unselectable="on">[bbcode]</span></div></div></div><div class="wysibb-text"><textarea id="message-message" name="Message[message]" rows="6" class="wysibb-texarea" style="display: none;"></textarea><div class="wysibb-text-editor wysibb-body" style="max-height:800px;min-height:108px" contenteditable="true"><span></span></div></div><div class="bottom-resize-line"></div></div>
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group field-message-recaptcha">
+
+<input type="hidden" id="message-recaptcha" class="form-control" name="Message[reCaptcha]"><div id="message-recaptcha-recaptcha-w2" class="g-recaptcha" data-sitekey="6Le9478aAAAAAGPfJ-NxoWI9EijkI1C8T0gSBKOX" data-input-id="message-recaptcha" data-form-id="w2"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="./Slick Slider - установка, настройка примеры и документация_files/anchor.html" width="304" height="78" role="presentation" name="a-lzibildvfsw8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Slick Slider - установка, настройка примеры и документация_files/saved_resource.html"></iframe></div>
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+    </div>
+    <br>
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Отправить</button>    </div>
+
+    </form>
+</div>
+        </div>
+    </div>
+</section>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+
+            <div class="row">
+
+                <!-- Footer Widget -->
+                <div class="col-md-6 col-sm-6 col-xs-12 mb-30">
+                    <div class="footer-widget">
+
+                        <img src="./Slick Slider - установка, настройка примеры и документация_files/logo250x60.png" alt="logo">                        <p>Copyright © 2014 - 2021 <br> All rights reserved.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 col-xs-12 mb-30">
+                    <div class="footer-widget">
+                        
+<h4 class="title">Подписаться</h4>
+<p>Будь в курсе новых статей, подпишись.</p>
+<form id="subscribe-form" action="https://bezramok-tlt.ru/subscribe/add-subscribe" method="post">
+<input type="hidden" name="_csrf" value="bwUERnx8Wocc-oj-mNptogUhh_XNqN-DbVDg6_x_lCkVY1wjBAoX1nXIv7jL7Sr7U3LmmbrbrtkjCaGKqz2nHA=="><div class="row">
+    
+    <div class="col-md-8 field-subscribe-email required">
+
+<input type="text" id="subscribe-email" class="form-control" name="Subscribe[email]" placeholder="Email" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>    
+    <div class="form-group col-md-4">
+        <button type="submit" class="btn btn-primary">Подписаться</button>    </div>
+    
+</div>
+
+</form>
+ 
+
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /.container -->
+  </footer>
+    <div class="container-fluid" style="background-color: #2d2d2d; color: #d0d0d0">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-6 text-left">Copyright © 2014 - 2021 All rights reserved.</div>
+                <div class="col-md-6 text-right">
+                    <ul class="list-inline">
+
+                                                    <li class="list-inline-item link-bottom">
+                                <a class="главная" href="https://bezramok-tlt.ru/" title="Главная">Главная</a>                            </li>
+                                                    <li class="list-inline-item link-bottom">
+                                <a class="php" href="https://bezramok-tlt.ru/blog/php" title="PHP">PHP</a>                            </li>
+                                                    <li class="list-inline-item link-bottom active">
+                                <a class="jquery" href="https://bezramok-tlt.ru/blog/jquery" title="JQuery">JQuery</a>                            </li>
+                                                    <li class="list-inline-item link-bottom">
+                                <a class="html" href="https://bezramok-tlt.ru/blog/html" title="HTML">HTML</a>                            </li>
+                                                    <li class="list-inline-item link-bottom">
+                                <a class="powershell" href="https://bezramok-tlt.ru/blog/powershell" title="Powershell">Powershell</a>                            </li>
+                                                    <li class="list-inline-item link-bottom">
+                                <a class="linux" href="https://bezramok-tlt.ru/blog/linux" title="linux">linux</a>                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/api.js.Без названия" async="" defer=""></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/jquery.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/highlight.pack.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/slick.min.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/slick-demo.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/yii.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/yii.validation.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/jquery.wysibb.min.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/ru.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/yii.activeForm.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/common.js.Без названия"></script>
+<script src="./Slick Slider - установка, настройка примеры и документация_files/bootstrap.bundle.js.Без названия"></script>
+<script>
+                hljs.configure();
+                hljs.initHighlightingOnLoad();
+function recaptchaOnloadCallback() {
+    "use strict";
+    jQuery(".g-recaptcha").each(function () {
+        const reCaptcha = jQuery(this);
+        if (reCaptcha.data("recaptcha-client-id") === undefined) {
+            const recaptchaClientId = grecaptcha.render(reCaptcha.attr("id"), {
+                "callback": function (response) {
+                    if (reCaptcha.data("form-id") !== "") {
+                        jQuery("#" + reCaptcha.data("input-id"), "#" + reCaptcha.data("form-id")).val(response)
+                            .trigger("change");
+                    } else {
+                        jQuery("#" + reCaptcha.data("input-id")).val(response).trigger("change");
+                    }
+
+                    if (reCaptcha.attr("data-callback")) {
+                        eval("(" + reCaptcha.attr("data-callback") + ")(response)");
+                    }
+                },
+                "expired-callback": function () {
+                    if (reCaptcha.data("form-id") !== "") {
+                        jQuery("#" + reCaptcha.data("input-id"), "#" + reCaptcha.data("form-id")).val("");
+                    } else {
+                        jQuery("#" + reCaptcha.data("input-id")).val("");
+                    }
+
+                    if (reCaptcha.attr("data-expired-callback")) {
+                        eval("(" + reCaptcha.attr("data-expired-callback") + ")()");
+                    }
+                },
+            });
+            reCaptcha.data("recaptcha-client-id", recaptchaClientId);
+        }
+    });
+}</script>
+<script>jQuery(function ($) {
+$('.jquery').parent().addClass('active');
+jQuery('#message-message').wysibb({"hotkeys":false,"buttons":"bold,italic,underline,|,php,html,sql,js,ps","allButtons":{"php":{"title":"PHP code","buttonText":"php","transform":{"<pre><code class=\"php\">{SELTEXT}</code></pre>":"[php]{SELTEXT}[/php]"}},"html":{"title":"html code","buttonText":"html","transform":{"<pre><code class=\"markup\">{SELTEXT}</code></pre>":"[html]{SELTEXT}[/html]"}},"sql":{"title":"sql code","buttonText":"sql","transform":{"<pre><code class=\"sql\">{SELTEXT}</code></pre>":"[sql]{SELTEXT}[/sql]"}},"js":{"title":"js code","buttonText":"js","transform":{"<pre><code class=\"javascript\">{SELTEXT}</code></pre>":"[js]{SELTEXT}[/js]"}},"ps":{"title":"ps code","buttonText":"ps","transform":{"<pre><code class=\"powershell\">{SELTEXT}</code></pre>":"[ps]{SELTEXT}[/ps]"}}},"lang":"ru"});
+jQuery('#w2').yiiActiveForm([{"id":"message-nickname","name":"nickname","container":".field-message-nickname","input":"#message-nickname","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Имя»."});yii.validation.string(value, messages, {"message":"Значение «Имя» должно быть строкой.","max":50,"tooLong":"Значение «Имя» должно содержать максимум 50 символа.","skipOnEmpty":1});}},{"id":"message-email","name":"email","container":".field-message-email","input":"#message-email","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Email» должно быть строкой.","max":200,"tooLong":"Значение «Email» должно содержать максимум 200 символа.","skipOnEmpty":1});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Значение «Email» не является правильным email адресом.","enableIDN":false,"skipOnEmpty":1});}},{"id":"message-message","name":"message","container":".field-message-message","input":"#message-message","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Сообщение»."});yii.validation.string(value, messages, {"message":"Значение «Сообщение» должно быть строкой.","skipOnEmpty":1});}},{"id":"message-recaptcha","name":"reCaptcha","container":".field-message-recaptcha","input":"#message-recaptcha","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {if (!value) {
+     messages.push("Пожалуйста подтвердите что вы не БОТ");
+}}}], {"errorSummary":".alert.alert-danger","errorCssClass":"is-invalid","successCssClass":"is-valid","validationStateOn":"input"});
+$('.slick-slider-ustanovka-nastrojka-primery-i-dokumentaciya').parent().addClass('active');
+jQuery('#subscribe-form').yiiActiveForm([{"id":"subscribe-email","name":"email","container":".field-subscribe-email","input":"#subscribe-email","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Email»."});yii.validation.string(value, messages, {"message":"Значение «Email» должно быть строкой.","max":255,"tooLong":"Значение «Email» должно содержать максимум 255 символа.","skipOnEmpty":1});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Значение «Email» не является правильным email адресом.","enableIDN":false,"skipOnEmpty":1});}}], {"errorSummary":".alert.alert-danger","errorCssClass":"is-invalid","successCssClass":"is-valid","validationStateOn":"input"});
+});</script>
+
+<div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="текущую проверку reCAPTCHA можно пройти в течение ещё двух минут" src="./Slick Slider - установка, настройка примеры и документация_files/bframe.html" name="c-lzibildvfsw8" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div></body></html>

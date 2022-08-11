@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9,'sdgbgsdg']
+
+    // for
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            console.log('for для чётных', numbers[i])
+        }
+    }
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] % 2 !== 0) {
+            continue // если число не четное, то пропускаем элемент и идем дальше
+        // break if we want to stop
+        } else {
+            console.log('for для чётных', numbers[i])
+        }
+    }
+
+    for (let i = 0; i < numbers.length; i++) {
+    if(typeof numbers[i] === 'string'){
+        console.log('stop')
+        break
+    } else{
+        console.log(numbers[i])
+    }
+
+    }
+
+    // for in
+    for (let i in numbers) {
+        console.log('i (for in) = ', i)
+    }
+    //for of
+    for (let i of numbers) {
+        console.log('i (for of) = ', i)
+    }
+
+    //forEach
+    numbers.forEach((val, idx) => {
+        console.log('val (forEach)=', val)
+    })
+
+</script>
+
+</body>
+</html>

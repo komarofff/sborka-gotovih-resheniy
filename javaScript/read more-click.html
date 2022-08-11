@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        body {
+            font-size: 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+<p class="text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti doloremque eum expedita
+    labore nostrum quam reiciendis repudiandae sit tenetur. Architecto at, autem doloremque facere ipsa molestiae
+    necessitatibus nemo nihil praesentium saepe sunt temporibus voluptatum. Autem distinctio fuga iusto quas. Ab
+    adipisci atque beatae consequatur consequuntur esse et exercitationem ipsam modi mollitia necessitatibus neque non
+    obcaecati pariatur perferendis, quos similique. Autem deserunt dolore eaque facilis, harum illum magnam natus nemo
+    obcaecati optio quam quas qui quo, saepe, tempora unde vero!
+</p>
+<p class="read-more">read more</p>
+
+<script>
+    let text = document.querySelector('.text').innerHTML
+    let textSplit = text.split('.')
+    console.log(textSplit)
+    document.querySelector('.text').innerHTML = `${textSplit[0]}.`
+
+    document.querySelector('.read-more').addEventListener('click',(e)=>{
+        e.target.style.display = 'none'
+        document.querySelector('.text').innerHTML = `${text}.`
+    })
+
+
+    let salaries = {
+        John: 100,
+        Ann: 160,
+        Pete: 130
+    }
+    Object.prototype.salarySum = function (){
+        let sum = 0
+       for( [key,val] of Object.entries(this)){
+           sum+= val
+       }
+       return sum
+
+    }
+ let commonSum = salaries.salarySum()
+    console.log('commonSum='+commonSum)
+</script>
+</body>
+</html>

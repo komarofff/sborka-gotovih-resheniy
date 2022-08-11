@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .qw{
+            width: 300px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="qw"></div>
+
+<script>
+    const div = document.querySelector('.qw')
+    const {width,height} = div.getBoundingClientRect()
+    console.log(div.getBoundingClientRect())
+    console.log('div width = ',width)
+    console.log('div height',height)
+
+    // const createCar = (name, model) => {
+    //     return {name,model}
+    // }
+    const createCar = (name, model) => ({name, model})
+    //////////////
+    const ford = createCar('Ford', 'Focus')
+    console.log(ford)
+    ///////////////////////
+    const yearField = 'year'
+    const random = Math.ceil(Math.random() * (100 - 1) + 1)
+    const kia = {
+        name: 'Kia',
+        ['model']: 'Sorento',
+        // ['model-'+ random]:'Sorento',
+        [yearField]: 2018,
+        logFields() {
+           // console.log(this.name, this.model, this.year)
+            const {name, year, model} = this
+            console.log(name, model, year)
+        }
+    }
+    console.log(kia)
+
+    //const year = kia.year
+    const {year} = kia
+    console.log('year', year)
+
+</script>
+
+</body>
+</html>

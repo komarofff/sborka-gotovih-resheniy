@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .blue {
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+<h1>HELLO!</h1>
+<hr>
+<div class="box" id="box1"></div>
+<div class="box" id="box2"></div>
+
+<!--<button onclick="changeColor()">add colors</button>-->
+<!--<button onclick="removeColors()">remove colors</button>-->
+<input type="text">
+<button>Add colors</button>
+<script>
+    var h1 = document.querySelector('h1')
+    var button = document.querySelector('button')
+    var box1 = document.querySelector('#box1')
+    var box2 = document.querySelector('#box2')
+    var input= document.querySelector('input')
+    button.addEventListener('click',()=>{
+            h1.textContent = input.value
+            var hasColor = box1.classList.contains('red')
+            if (hasColor) {
+                box1.classList.remove('red')
+                box2.classList.remove('blue')
+                document.querySelector('button').textContent = 'Add colors'
+
+            } else {
+                box1.classList.add('red')
+                box2.classList.add('blue')
+                document.querySelector('button').textContent = 'Remove colors'
+            }
+        })
+    var h1 = document.querySelector('h1')
+    h1.addEventListener('mouseenter',(e)=>{
+        //console.log('mouse is here',e.target)
+        e.target.style.color = 'red'
+        e.target.style.backgroundColor = 'yellow'
+    })
+    h1.addEventListener('mouseleave',function(){
+        //console.log('mouse is not here')
+        this.style.color = 'black'
+        this.style.backgroundColor = 'transparent'
+    })
+
+
+    // function  changeColor(){
+    //     box1.classList.add('red')
+    //     box2.classList.add('blue')
+    //     console.log(box1.classList.contains('red'))
+    // }
+    // function  removeColors(){
+    //     box1.classList.remove('red')
+    //     box2.classList.remove('blue')
+    // }
+
+</script>
+
+</body>
+</html>

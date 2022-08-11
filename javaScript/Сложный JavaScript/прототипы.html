@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // const person = {
+  //     name: "Anatoliy",
+  //     age: 45,
+  //     hello: function (){
+  //         console.log('Hello!!')
+  //     }
+  // }
+  const arr=[1,2,3,4]
+  const person = new Object({
+      name: "Anatoliy",
+      age: 45,
+      hello: function () {
+          console.log('Hello!!')
+      }
+  })
+  const person2 =
+      { name: "Anatoliy", age: 45}
+  // создаем новый прототип в классе Object
+  // теперь в любом объекте доступна новая функция sayHello
+  // person.sayHello() = I`m prototype
+  Object.prototype.sayHello = function (){
+      console.log('I`m prototype')
+  }
+  Object.prototype.showThis = function (){
+      console.group('This = ',this)
+      console.log('name= ',this.name)
+      console.log('age= ',this.age)
+      console.groupEnd(this.hello())
+  }
+  String.prototype.colorRed = function (){
+
+  }
+  Array.prototype.new_task = function (){
+      alert("new")
+  }
+
+  const lena = Object.create(person)
+  lena.name = 'Elena'
+
+  const str = new String('I`m string')
+
+  let arr5 = [1,2,3,4,5,6]
+Array.prototype.double = function(n){
+     return  this.map(function(i){
+       return  i*n
+      })
+}
+  console.log(arr5.double(2))
+
+
+</script>
+</body>
+</html>

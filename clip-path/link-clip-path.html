@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+
+        }
+
+        .link {
+            position: relative;
+            transition: clip-path 275ms ease;
+        }
+
+        .link:hover span::before, .link:focus span::before {
+            /*clip-path: polygon(x1 y1, x2 y2, x3 y3, x4 y4); по часовой стрелке */
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        span {
+            position: relative;
+            display: inline-block;
+            color: #2c2fe8;
+        }
+
+        span::before {
+            position: absolute;
+            /*top:-20px;*/
+            content: attr(data-content);
+            color: darkblue;
+            text-decoration: underline;
+            text-decoration-color: darkblue;
+            clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+            transition: clip-path 275ms ease;
+        }
+
+        @keyframes start-clip {
+            0% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            100% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 85%, 75% 100%, 50% 80%, 0% 75%);
+            }
+
+        }
+
+        @keyframes polygons {
+            0% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            25% {
+                clip-path: polygon(20% 0%, 100% 38%, 70% 90%, 0% 100%);
+                shape-outside:polygon(20% 0%, 100% 38%, 70% 90%, 0% 100%);
+                background: pink;
+            }
+            50% {
+                clip-path: polygon(0 46%, 100% 15%, 55% 74%, 0 100%);
+                shape-outside:polygon(0 46%, 100% 15%, 55% 74%, 0 100%);
+                background: orange;
+            }
+            75% {
+                clip-path: polygon(100% 38%, 100% 38%, 66% 100%, 0 53%);
+                shape-outside:polygon(100% 38%, 100% 38%, 66% 100%, 0 53%);
+                background: cornflowerblue;
+            }
+            100% {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                shape-outside:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+
+img{
+    width:500px;
+    float:left;
+}
+
+        img:hover {
+            animation: polygons 4s alternate infinite;
+
+        }
+        .ellipse {
+            float: left;
+            shape-outside: ellipse();
+            clip-path: ellipse();
+            width: 550px;
+            height: 300px;
+            background: linear-gradient(to top right, #F17BB7, #AD84E3);
+        }
+        .inset {
+            float: left;
+            shape-outside: inset(75px round 25px);
+            clip-path: inset(75px round 25px);
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(#58C2ED, #1B85DC);
+        }
+        .star {
+            float: left;
+            height: 350px;
+            width: 350px;
+            shape-outside: url('./star.png')
+        }
+
+        span.dotted::before {
+            text-decoration-style: dotted;
+        }
+
+        span.dashed::before {
+            text-decoration-style: dashed;
+        }
+
+        span.double::before {
+            text-decoration-style: double;
+        }
+
+        span.wavy::before {
+            text-decoration-style: wavy;
+        }
+
+        span.line-through::before {
+            text-decoration-line: line-through;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+<img src="1.jpg" alt="">
+<p style="font-size:35px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda consequatur cupiditate ex expedita
+    fugiat hic illo, ipsum, iste laudantium molestias natus officiis quibusdam quidem quisquam recusandae sequi vero
+    vitae.Doloremque harum quibusdam voluptatibus! Eius est magnam odit recusandae voluptatibus. Blanditiis deleniti ea ex fuga illo
+    iste nulla sed vel? Asperiores dolorum illo illum laborum odit quaerat, quis quod reiciendis?
+    Ad amet asperiores debitis ea explicabo inventore ipsa modi nam natus, officiis porro reiciendis rerum sit soluta
+    tempora ut vero! Ea esse impedit inventore molestias nesciunt qui recusandae repudiandae sit?
+    Animi consequatur quia voluptatem? Amet autem debitis doloremque eum ex, fugit impedit itaque iure labore
+    laboriosam, minima mollitia non odio pariatur placeat praesentium reprehenderit saepe sequi vel, velit. Quia, quibusdam.
+    Ab blanditiis dolor dolorem itaque laborum modi molestias natus, odio omnis perferendis quam quia quos recusandae sunt ullam,
+    veritatis vitae! Commodi mollitia omnis ratione tempore! Asperiores autem commodi enim nihil.
+</p>
+</div>
+<div >
+
+    <img src="star.png" class="star">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet assumenda consequatur cupiditate ex expedita
+        fugiat hic illo, ipsum, iste laudantium molestias natus officiis quibusdam quidem quisquam recusandae sequi vero
+        vitae.Doloremque harum quibusdam voluptatibus! Eius est magnam odit recusandae voluptatibus. Blanditiis deleniti ea ex fuga illo
+        iste nulla sed vel? Asperiores dolorum illo illum laborum odit quaerat, quis quod reiciendis?
+        Ad amet asperiores debitis ea explicabo inventore ipsa modi nam natus, officiis porro reiciendis rerum sit soluta
+        tempora ut vero! Ea esse impedit inventore molestias nesciunt qui recusandae repudiandae sit?
+        Animi consequatur quia voluptatem? Amet autem debitis doloremque eum ex, fugit impedit itaque iure labore
+        laboriosam, minima mollitia non odio pariatur placeat praesentium reprehenderit saepe sequi vel, velit. Quia, quibusdam.
+        Ab blanditiis dolor dolorem itaque laborum modi molestias natus, odio omnis perferendis quam quia quos recusandae sunt ullam,
+        veritatis vitae! Commodi mollitia omnis ratione tempore! Asperiores autem commodi enim nihil.
+    </p>
+    <p> Latte teapot shincha blend <a class="link" href="#"><span data-content="chamomile">chamomile</span></a> yixing
+        scented shrub iced ginger. Chamomile irish breakfast fermentation london fog gaiwan <a class="link"
+                                                                                               href="#"><span
+                class="dotted" data-content="boba">boba</span></a> lapsang souchong ceylon shincha teahouse <a
+                class="link" href="#"><span class="line-through" data-content="kombucha">kombucha</span></a> camellia
+        sinensis white. Pu’erh lychee tisane ceylon infusion ginger antioxidant <a class="link" href="#"><span
+                class="dashed" data-content="jasmine">jasmine</span></a> darjeeling antioxidant zen mint. Oolong taro
+        honeydew shoumei white pearl milk boba <a class="link" href="#"><span class="double" data-content="latte">latte</a>
+        lapsang souchong white rooibos. Mug tea time english breakfast kukicha boba tisane <a class="link"
+                                                                                              href="#"><span
+                class="wavy" data-content="matcha">matcha</span></a> teacup.</p>
+</div>
+</body>
+</html>

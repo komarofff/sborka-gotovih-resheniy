@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+            background: red;
+        }
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            background: blue;
+        }
+        .box3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+<h1>JavaScript events</h1>
+
+<a href="https://google.com" target="_blank">toggle</a>
+
+<div class="box1" id="div1">
+    <div class="box2" id="div2">
+        <div class="box3" id="div3"></div>
+    </div>
+
+</div>
+
+<script>
+    var divs = document.querySelectorAll('div')
+var a = document.querySelector('a')
+    for(var i=0; i<divs.length;i++){
+        divs[i].addEventListener('click',function (e){
+            e.stopPropagation() // останавливаем всплытие или погружение
+            console.log(this.getAttribute('id'))
+        },false) // true = 1,2,3 погружение //  false = 3,2,1  всплытие
+
+    }
+
+    a.addEventListener('click',handleClick  )
+    function handleClick(e){
+        e.preventDefault() // stop default behavior
+        var div = divs[2]
+
+        // if(div.style.display === 'none'){
+        //     div.style.display = 'flex'
+        // }else{
+        //     div.style.display = 'none'
+        // }
+
+        div.style.display = div.style.display === 'none'
+        ? 'flex'
+        : 'none'
+    }
+
+</script>
+</body>
+</html>

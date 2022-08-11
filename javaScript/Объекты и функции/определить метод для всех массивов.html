@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  var a = [1,2,3]
+  var b = [5,'Hello',6]
+
+  Array.prototype.doubleData = function(){
+          var newArr = this.map(function (element){
+          //if(typeof element === 'number'){return element * element}
+          if(typeof element === 'number'){return Math.pow(element,2)}
+          if(typeof element === 'string'){return element + element}
+      })
+      return newArr
+  }
+  var newA = a.doubleData()
+  var newB = b.doubleData()
+
+  console.log('newA: ',newA)
+  console.log('newB: ',newB)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+// числа
+console.log(42)
+console.log(-42)
+console.log(1.5)
+console.log(8 / 3) // 2.66666
+console.log(0xAB)
+console.log(2e3) // 2000
+console.log(NaN) // not a number
+console.log(typeof NaN) // number!!!
+console.log(123 / 0 ) // Infinity
+
+var fortyTwo = 42
+var delta = 8 / 3
+console.log(fortyTwo.toString()) // приведение числа к строке
+console.log(delta.toFixed(3)) // строка . ограничение на количество знаков после запятой
+console.log(+delta.toFixed(3)) // с плюсом  число . ограничение на количество знаков после запятой
+console.log(+delta.toFixed(3)+5) // с плюсом  число
+console.log(parseFloat(delta.toFixed(2))) // число . приводит строку в число
+console.log(parseInt(delta.toFixed(2))) // число - целое. приводит строку в число. убирает дроби
+
+console.log(isNaN(45)) // false - число ( это не число? - false- это число)
+console.log(isNaN(NaN)) // true - не  число
+console.log(isNaN('sdvdsv')) // true - не число
+
+console.log(isFinite(1/0)) // false юявляется ли число конечным результатом
+console.log(isFinite(98999999999)) // true
+
+</script>
+</body>
+</html>

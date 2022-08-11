@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1></h1>
+<input type="text">
+<button>save</button>
+<button id="but2">Get value</button>
+
+<script>
+
+document.querySelector('button').addEventListener('click',()=>{
+
+    var value = document.querySelector('input').value
+    var obj = {
+        text: value
+    }
+    //передаем данные только в строковом формате .если надо. то JSON.stringify()
+    localStorage.setItem('inputValue',JSON.stringify(obj))
+
+})
+
+document.querySelector('#but2').addEventListener('click',()=>{
+
+    //var local =JSON.parse(localStorage.getItem('inputValue'))
+    // if(local && local.trim()) {
+    //     document.querySelector('h1').textContent = localStorage.getItem('inputValue')
+    // }
+    try{
+        var local =JSON.parse(localStorage.getItem('inputValue'))
+    }
+    catch(e){
+        var local = {}
+    }
+
+    if(local && local.text && local.text.trim()) {
+        document.querySelector('h1').textContent = local.text
+    }
+})
+
+
+document.addEventListener('DOMContentLoaded',()=>{
+    try{
+        var local =JSON.parse(localStorage.getItem('inputValue'))
+    }
+    catch(e){
+        var local = {}
+    }
+    if(local && local.text && local.text.trim()) {
+        document.querySelector('h1').textContent = local.text
+    }
+})
+</script>
+
+</body>
+</html>

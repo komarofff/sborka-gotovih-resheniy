@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+//  function addNewParameters(data){
+//      return function (data2){
+//          return  data+data2
+//      }
+//  }
+//  const getParam = addNewParameters('Hello ')
+//  console.log(getParam('Anatoliy!'))
+
+function logPerson(){
+    console.log(`Person: ${this.name}, ${this.age}, ${this.job}`)
+}
+const person1={name:'Anatoliy', age:45,job:'frontend developer'}
+const person2={name:'Kristina', age:4,job:'Anatoliy`s daughter'}
+
+// bind(person1,logPerson)
+// bind(person2,logPerson)
+function bind(context, fn){
+    return function (...arg){
+        return fn.apply(context,arg)
+    }
+}
+bind(person1,logPerson)()
+bind(person2,logPerson)()
+/////
+
+</script>
+
+</body>
+</html>

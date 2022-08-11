@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// this
+  function hello(){
+      console.log('Hello',this)
+  }
+
+  const person = {
+      name:'Anatoliy',
+      age: 45,
+      sayHello : hello,
+      sayHelloWindow : hello.bind(window),
+      logInfo: function (job,phone){
+          console.group(`${this.name} info :`)
+          console.log(`Name is ${this.name}`)
+          console.log(`Age is ${this.age}`)
+          console.log(`Job is ${job}`)
+          console.log(`Phone is ${phone}`)
+
+          console.groupEnd()
+      },
+      logInfo2: function (...args){
+          //Object.keys(obj) - get the keys
+          //Object.values(obj) - get the values
+
+          //Object.entries(obj)
+          //for (const [key, value] of Object.entries(obj)) {
+          //console.log(`${key}: ${value}`);
+          //}
+          keys = Object.keys(this)
+          for (var i = 0, l = keys.length; i < l; i++) {
+              console.log(keys[i] + ' is ' + this[keys[i]]);
+              // keys[i] - это ключ
+              // this[keys[i]] - а это свойство, доступное по этому ключу
+          }
+          console.log(this)
+          console.log(keys)
+          console.log(args)
+      }
+  }
+
+const lena = {
+      name: 'elena',
+    age: 23
+}
+//person.logInfo.bind(lena,'frontend','2143441412')()
+const fnLenaInfoLog = person.logInfo.bind(lena,'frontend','2143441412')
+//fnLenaInfoLog('frontend','2143441412')
+fnLenaInfoLog()
+//call()
+person.logInfo.call(lena,'frontend','2143441412')
+// apply
+person.logInfo.apply(lena,['frontend','2143441412'])
+
+const anatoliy = {
+      name: 'Anatoliy Komarov',
+    age: 45,
+    job: 'Frontend developer',
+    phone: '+375234564567'
+}
+person.logInfo2.apply(anatoliy,[1,2,3,4,5,6,7,88,987])
+/// ===========================
+
+const array = [1,2,3,4,5]
+
+// function multBy(arr,n){
+//       return arr.map(function(i){
+//         return  i*n
+//       })
+// }
+// console.log(multBy(array,5))
+
+Array.prototype.multBy = function(n){
+    return this.map(function(i){
+        return  i*n
+      })
+}
+console.log(array.multBy(67))
+</script>
+</body>
+</html>

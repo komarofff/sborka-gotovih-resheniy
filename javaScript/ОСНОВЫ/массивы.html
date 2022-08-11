@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+    var cars = [
+        'ford',
+        'mazda',
+        'kia',
+        'BMW'
+    ]
+    console.log(cars)
+    console.log(cars.length) // длина массива
+
+    // добавляет элемент в конец массива
+    cars.push('MOSKVICH')
+    console.log(cars)
+
+    // удаляет и возвращает последний элемент в массиве
+    var lastElement = cars.pop()
+    console.log(cars, lastElement)
+
+    // удаляет и возвращает ПЕРВЫЙ элемент в массиве
+    var firstElement = cars.shift()
+    console.log(cars, firstElement)
+
+    // добавляет элемент в НАЧАЛО массива
+    cars.unshift('BELAZ')
+    console.log(cars)
+
+    // поиск  index элемента в массиве
+    var index = cars.indexOf('mazda')
+    console.log(cars[index])
+
+    // поиск элемента в массиве
+    console.log(cars.findIndex(elem => elem === 'mazda'))
+
+
+    // поиск по элементу или индексу
+    let users = [
+        {id: 1, name: "Вася"},
+        {id: 2, name: "Петя"},
+        {id: 3, name: "Маша"}
+    ];
+    var user = users.find(item => item.id == 1); // ищем по id
+    console.log(user.name); // Вася
+    var user = users.find(item => item.name == "Маша"); // ищем по Name
+    console.log(user.id); // Вася
+
+    // filter
+    // let results = arr.filter(function(item, index, array) {
+    //     // если true - элемент добавляется к результату, и перебор продолжается
+    //     // возвращается пустой массив в случае, если ничего не найдено
+    // });
+    // возвращает массив, состоящий из двух первых пользователей
+    let someUsers = users.filter(item => item.id < 3);
+    console.log('filter = ', someUsers); // 2
+
+
+    // splice удаление элементов из массива со сдвигом индексов и получение их в переменную
+    var spliseArray = cars.splice(2, 1) // начинаем с индекса массива 2 и удаляем 1 элемент
+    console.log(cars, spliseArray)
+
+    // MAP Он вызывает функцию для каждого элемента массива и возвращает массив результатов выполнения этой функции.
+    // Синтаксис:
+    //       let result = arr.map(function(item, index, array) {
+    //           // возвращается новое значение вместо элемента
+    //       });
+    let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+    console.log(lengths); // 5,7,6
+
+    // for in возвращает КЛЮЧИ
+    for(let key in cars){
+        console.log('key',key)
+    }
+ // for of возвращает значения
+    for(let value of cars){
+        console.log('value',value)
+    }
+ // for in возвращает КЛЮЧИ
+    for(let key in users){
+        console.log('key',key)
+    }
+ // for of возвращает значения
+    for(let value of users){
+        console.log('value',value)
+    }
+
+</script>
+
+</body>
+</html>

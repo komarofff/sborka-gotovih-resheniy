@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Что такое DOM?</h1>
+<p>Document Object Model</p>
+<p class="text">Параграф с классом</p>
+<p class="text">Еще один текст</p>
+<hr>
+<input type="text" value="Im input">
+<div id="playground">
+    <span>text</span>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li><li>4</li><li>5</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    //id
+    var div = document.getElementById('playground')
+    console.log('div', div)
+
+    // class
+    var p = document.getElementsByClassName('text')
+    console.log('p', p)
+
+    // tag
+    var pTag = document.getElementsByTagName('p')
+    var h1 = document.getElementsByTagName('h1')
+    console.log('pTag', pTag)
+    console.log('h1', h1)
+
+    //selector
+    var div = document.querySelector('#playground')
+    console.log('div new', div)
+    var p = document.querySelectorAll('.text')
+    console.log('new p', p)
+    var p = document.querySelectorAll('p')
+    console.log('new p', p)
+    console.log('p[0].nextElementSibling',p[0].nextElementSibling)
+    console.log('p[2].previousElementSibling',p[2].previousElementSibling)
+
+    var ul = document.querySelector('div#playground > ul')
+    console.log('ul', ul.children[0].innerHTML)
+
+    div.innerHTML = '<h2 style="color:red; font-size: 50px">From script</h2>'
+
+    var h1 = document.querySelector('h1')
+    console.log('h1',h1.textContent)
+
+    var input = document.querySelector('input')
+    console.log('input',input.value)
+
+
+</script>
+</body>
+</html>

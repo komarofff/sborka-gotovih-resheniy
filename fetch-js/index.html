@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+/// **********************************************************************************************
+        let userData=[{
+        myName: "Anatoliy Komarov",
+         myPassword : "23552353235sgrewgwwe"
+         }];
+        ///// работает 
+        myName = "Anatoliy Komarov";
+        myPassword = "23552353235sgrewgwwe";
+        fetch('otvet.php', {
+            method: 'POST',
+            body: `name=${myName}&password=${myPassword}` 
+        }).then(function (response) {
+                       return response.json();
+        }).then(function (data) {
+            // ... Делаем что-то с данными.
+            alert("Name= "+data.name+ " Password= "+ data.password+" | "+ data.dannie.first+" | "+
+             data['dannie']['2first']+" | "+ data.dannie['3first']+" | "+ data.dannie['4first']+" | "+ data.dannie['5first']);
+        }).catch(function (error) {
+            // ... Обрабатываем ошибки.
+        });
+// v php
+// <?php
+// $data = file_get_contents('php://input');
+// parse_str($data);
+// $out[] = $name;// $_POST['name']
+// $out[] = $password;// $_POST['password']
+// echo json_encode($out);
+/// **********************************************************************************************
+  ///// работает . получение данных от файла 
+        // fetch('otvet.json')
+        //     .then((response) => {
+        //         return response.json();
+        //     })
+        //     .then((data) => {
+        //         alert(data);
+        //     });
+    </script>
+</body>
+
+</html>

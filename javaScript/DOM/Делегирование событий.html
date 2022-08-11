@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Javascript events</h1>
+<div id="wrapper">
+<p class="color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, totam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur.</p>
+<p class="color">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo in odio quisquam?</p>
+<ul>
+    <li>1</li>
+    <li class="color">2</li>
+    <li>3</li>
+</ul>
+</div>
+
+<script>
+    var wrapper = document.querySelector('#wrapper')
+    wrapper.addEventListener('click',(e)=>{
+        console.log('e.target.tagName',e.target.tagName)
+        var tagName = e.target.tagName.toLowerCase()
+        if(tagName === 'p'){
+            e.target.style.color = 'red'
+        }
+        if(e.target.classList.contains('color')){
+            e.target.style.color = 'darkblue'
+        }
+    })
+
+</script>
+</body>
+</html>

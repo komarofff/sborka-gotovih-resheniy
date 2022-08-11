@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form >
+    <input type="text" name="title" >
+    <br>
+    <input type="text" name="text" >
+    <br>
+    <input type="text" name="description" >
+    <br>
+    <button type="submit">Save</button>
+    
+</form>
+
+<script>
+
+    const form = document.querySelector('form')
+
+    form.addEventListener('submit', event => {
+        event.preventDefault()
+
+        const title =  form.title.value
+        const text =  form.text.value
+        const description =  form.description.value
+
+        //saveForm(title,text,description) // for rest ...args
+        saveForm({title,text,description}) // for spread
+
+    })
+//... spread
+    function saveForm(data){
+        const formData = {
+            date: new Date().toLocaleDateString(),
+            ...data
+        }
+        console.log("Form data",formData)
+    }
+
+//rest
+//     function saveForm(...args){
+//         const [title, text, description]= args
+//         const formData = {
+//             date: new Date().toLocaleDateString(),
+//             //...args
+//             //args
+//             title, text, description
+//         }
+//         console.log("Form data",formData)
+//     }
+
+</script>
+</body>
+</html>

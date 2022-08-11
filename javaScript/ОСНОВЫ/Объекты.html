@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+    var person = {
+        name: 'Anatoliy',
+        year: 1976,
+        calculateAge: function () {
+            this.age = new Date().getFullYear() - this.year
+            //return new Date().getFullYear() - this.year
+
+        },
+        family: ['Kristina', 'Ekaterina']
+    }
+
+
+    console.log(person) // object
+    console.log(person.name) // Anatoliy
+    console.log(person['year']) // 1976
+
+    var getFamily = 'family'
+    console.log(person[getFamily]) // array ['Kristina','Ekaterina']
+
+    // person.year = 1230
+    // console.log(person.year)
+    person.calculateAge()
+
+    person.mama = 'LUBA' // add item to object
+    console.log(person)
+
+    //
+    for(let key of Object.entries(person)){
+        console.log('key',key)
+    }
+
+</script>
+
+
+</body>
+</html>

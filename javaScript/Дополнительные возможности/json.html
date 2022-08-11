@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var person = {
+    name: 'Max',
+    age:26,
+    job: 'frontend',
+    friends: ['Kate','Alisa'],
+    car:{
+      model: 'ford'
+    }
+  }
+  console.log(person)
+var str = JSON.stringify(person)
+  console.log(JSON.stringify(person))
+
+  var obj = JSON.parse(str)
+  console.log(obj)
+</script>
+</body>
+</html>
